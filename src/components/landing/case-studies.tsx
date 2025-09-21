@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 const caseStudies = [
@@ -82,10 +82,13 @@ export function CaseStudies() {
                 <CardTitle>{study.company}</CardTitle>
                 <CardDescription className="text-primary font-bold text-lg">{study.results}</CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-grow flex-col">
-                <Badge variant="secondary" className="whitespace-normal bg-accent/20 text-accent-foreground h-full">
+              <CardContent className="flex flex-grow flex-col justify-between">
+                <p className="text-sm text-muted-foreground mb-4">
                   <strong>Key Insight:</strong> {study.insights}
-                </Badge>
+                </p>
+                <Button asChild variant="outline" className="mt-auto">
+                  <a href="https://www.levelingup.com/casestudies/6-cold-email-case-studies-great-reply-rates/" target="_blank" rel="noopener noreferrer">See More</a>
+                </Button>
               </CardContent>
             </Card>
           ))}

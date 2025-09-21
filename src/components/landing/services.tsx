@@ -33,10 +33,10 @@ const services = [
     description:
       'We build highly targeted prospect lists using premium databases. We identify decision-makers at companies that match your exact ideal client profile, so you stop wasting time on unqualified leads.',
     features: [
-      'High-quality prospect databases with verified contact information',
-      'Email and LinkedIn verification through ZeroBounce and MillionVerifier',
+      'High-quality prospect databases with verified contacts',
+      'Email verification through ZeroBounce & MillionVerifier',
       'Automated lead generation process that runs continuously',
-      'Option to purchase an entire system',
+      'Option to pay per qualified lead or purchase a system',
     ],
     toolLogos: ['Apollo.io', 'LinkedIn Sales Navigator', 'ZeroBounce', 'MillionVerifier']
   },
