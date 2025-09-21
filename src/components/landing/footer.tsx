@@ -14,7 +14,7 @@ export function Footer() {
           </div>
           <div className="flex items-center justify-center md:justify-end">
             <p className="max-w-xs text-sm italic text-muted-foreground">
-              <strong>P.S.</strong> In today's market, the B2B company that can generate its own demand holds an insurmountable competitive advantage.
+              <strong>P.S.</strong> Remember, 78% of accounting firms are still relying solely on referrals while their competitors are implementing systematic outreach. The firms that adapt first will dominate their markets.
             </p>
           </div>
         </div>

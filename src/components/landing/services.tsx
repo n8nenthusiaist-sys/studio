@@ -13,101 +13,86 @@ import {
   BrainCircuit,
   type LucideIcon,
   CheckCircle,
+  Linkedin
 } from 'lucide-react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
+
+const tools = {
+  'Apollo.io': 'https://www.apollo.io/favicon.ico',
+  'LinkedIn Sales Navigator': 'https://static.licdn.com/aero-v1/sc/h/al73832cl2r1826ok2ag9xvsb',
+  'ZeroBounce': 'https://www.zerobounce.net/favicon-32x32.png',
+  'MillionVerifier': 'https://www.millionverifier.com/favicon.ico',
+  'Instantly': 'https://instantly.ai/favicon.ico',
+  'Smartlead': 'https://smartlead.ai/favicon.ico',
+  'Phantombuster': 'https://phantombuster.com/favicon.ico',
+}
 
 const services = [
   {
     icon: Database,
     title: 'Strategic Lead Generation & Database Intelligence',
     description:
-      'We build hyper-targeted lead lists based on your ideal client profile. No more wasting time on unqualified prospects.',
+      'We build highly targeted prospect lists using premium databases. We identify decision-makers at companies that match your exact ideal client profile, so you stop wasting time on unqualified leads.',
     features: [
-      'Ideal Client Profile (ICP) workshop',
-      'Access to premium B2B data sources',
-      'List building, cleaning, and verification',
+      'High-quality prospect databases with verified contacts',
+      'Email verification through ZeroBounce & MillionVerifier',
+      'Automated lead generation process that runs continuously',
+      'Option to pay per qualified lead or purchase a system',
     ],
-    caseStudy: {
-      company: 'Fintech SaaS',
-      problem: 'Struggled to reach the right decision-makers (CTOs & VPs of Engineering) and wasted their budget on poor-quality leads.',
-      results: 'Built a targeted list of 500+ contacts, achieving a 12.6% response rate.',
-      imageHint: 'data analysis',
-      imageId: 'case-study-1',
-    },
+    toolLogos: ['Apollo.io', 'LinkedIn Sales Navigator', 'ZeroBounce', 'MillionVerifier']
   },
   {
     icon: Mail,
     title: 'Cold Email & LinkedIn Campaign Management',
     description:
-      'We manage your outreach campaigns from start to finish, ensuring consistent and professional communication.',
+      'We send over 5,000 personalized emails and 100+ LinkedIn connection requests weekly on your behalf. Our multi-channel approach maximizes reach and runs under your brand.',
     features: [
-      'Multi-channel outreach (Email & LinkedIn)',
-      'A/B testing of copy, subject lines, and CTAs',
-      'Daily campaign monitoring and optimization',
+      'Fully managed cold email campaigns',
+      'Personalized LinkedIn outreach sequences',
+      'Multi-channel approach for maximum reach',
+      'All campaigns run under your brand with your messaging',
     ],
-    caseStudy: {
-      company: 'Creative Agency',
-      problem: 'Had difficulty converting leads into meetings and lacked a systematic follow-up process.',
-      results: 'Booked 22 new meetings by running parallel LinkedIn and Email campaigns with strategic follow-ups.',
-      imageHint: 'social media marketing',
-      imageId: 'case-study-2',
-    },
+    toolLogos: ['Instantly', 'Smartlead', 'Phantombuster']
   },
   {
     icon: Server,
     title: 'Email Infrastructure Setup & Management',
     description:
-      'Protect your main domain and ensure high deliverability with a dedicated outreach infrastructure.',
+      'We handle all the technical backend work that most firms struggle with, including proper DNS setup (MX, DKIM, DMARC) and email warm-up sequences to avoid spam folders.',
     features: [
-      'New domain procurement and warm-up',
-      'SPF, DKIM, DMARC record setup',
-      'Ongoing deliverability monitoring and management',
+      'Complete domain and email infrastructure setup',
+      'Proper authentication to avoid spam folders',
+      'Automated email health monitoring and optimization',
+      'Blacklist monitoring and recovery protocols',
     ],
-    caseStudy: {
-      company: 'Consulting Firm',
-      problem: 'Their emails were landing in spam folders, and they feared their domain reputation was being damaged.',
-      results: 'Achieved a 45.5% open rate after we set up and managed their email infrastructure, ensuring high deliverability.',
-      imageHint: 'server security',
-      imageId: 'case-study-3',
-    },
+    toolLogos: []
   },
   {
     icon: FileText,
     title: 'Ultra-Personalized Email Copywriting',
     description:
-      "Our team writes compelling, personalized copy that gets replies by focusing on your prospects' pain points.",
+      'Every email is crafted specifically for each prospect. We conduct detailed research on their company, pain points, and industry challenges to write copy that gets replies.',
     features: [
-      'Value proposition-focused copywriting',
-      'Personalization at scale',
-      'Follow-up sequences that build relationships',
+      'Custom icebreakers for each prospect',
+      'Industry-specific pain point identification',
+      'Detailed company research reports stored in database',
+      'Ongoing copy optimization based on response rates',
     ],
-    caseStudy: {
-      company: 'Logistics B2B',
-      problem: 'Generic email templates were getting ignored, failing to build trust with potential clients in niche markets.',
-      results: 'Signed 7 new contracts in 3 months with a hyper-personalized, multi-touch campaign that built credibility.',
-      imageHint: 'contract signing',
-      imageId: 'case-study-4',
-    },
+    toolLogos: []
   },
   {
     icon: BrainCircuit,
     title: 'AI-Powered Response Management & Call Booking',
     description:
-      'We use AI to manage positive replies, handle objections, and book qualified meetings directly into your calendar.',
+      "Our system automatically responds to interested prospects and books calls while you sleep. We use a trained AI agent with your company information, so you'll never miss an opportunity.",
     features: [
-      '24/7 inbox monitoring',
-      'AI-assisted response handling',
-      'Seamless calendar integration for call booking',
+      '24/7 automated response to prospect inquiries',
+      'Intelligent lead qualification and scoring',
+      'Automatic calendar scheduling across time zones',
+      'Custom RAG agent trained on your services and expertise',
     ],
-    caseStudy: {
-      company: 'Software Dev Agency',
-      problem: 'Their team was overwhelmed with managing responses, and qualified leads were slipping through the cracks.',
-      results: 'Generated 8 qualified leads per month by using AI to manage initial responses and focusing on business pain points.',
-      imageHint: 'AI chatbot',
-      imageId: 'case-study-5',
-    },
+    toolLogos: []
   },
 ];
 
@@ -117,70 +102,59 @@ export function Services() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Our Services Deliver Real-World Results
+            Our Cold Outreach Services - What We Actually Do
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            We provide a complete, done-for-you system that solves your biggest growth challenges and generates a predictable stream of high-quality leads.
+            We are one of the only companies who've dedicated our entire business to solving the client acquisition problem specifically for accounting firms like yours.
           </p>
         </div>
         <div className="mx-auto grid max-w-7xl gap-8">
-          {services.map((service, index) => {
-            const caseStudyImage = PlaceHolderImages.find(
-              (img) => img.id === service.caseStudy.imageId
-            );
-            return (
+          {services.map((service, index) => (
               <Card
                 key={index}
-                className="grid overflow-hidden rounded-xl border-border/40 bg-background shadow-lg transition-all hover:shadow-2xl md:grid-cols-2 animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
+                className="overflow-hidden rounded-xl border-border/40 bg-background shadow-lg transition-all hover:shadow-2xl animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
               >
-                <CardContent className="flex flex-col p-8">
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                      <service.icon className="h-6 w-6" />
+                <div className="grid md:grid-cols-2">
+                  <CardContent className="flex flex-col p-8">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <service.icon className="h-6 w-6" />
+                      </div>
+                      <CardTitle className="flex-1 text-xl">{service.title}</CardTitle>
                     </div>
-                    <CardTitle className="flex-1 text-xl">{service.title}</CardTitle>
-                  </div>
-                  <CardDescription className="mt-4">
-                    {service.description}
-                  </CardDescription>
+                    <CardDescription className="mt-4 flex-grow">
+                      {service.description}
+                    </CardDescription>
 
-                  <div className="mt-6">
-                    <h4 className="font-semibold text-card-foreground">What you get:</h4>
-                    <ul className="mt-2 space-y-2">
-                      {service.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                           <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-500" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-                <div className="bg-primary/5 p-8">
-                    <h4 className="font-headline text-lg font-semibold text-primary">{service.caseStudy.company} Case Study</h4>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      <span className="font-semibold text-card-foreground">Problem: </span>
-                      {service.caseStudy.problem}
-                    </p>
-                    {caseStudyImage && (
-                      <div className="mt-4 overflow-hidden rounded-lg">
-                        <Image
-                          src={caseStudyImage.imageUrl}
-                          alt={caseStudyImage.description}
-                          width={600}
-                          height={400}
-                          className="w-full object-cover transition-transform duration-300 hover:scale-105"
-                          data-ai-hint={service.caseStudy.imageHint}
-                        />
+                    {service.toolLogos.length > 0 && (
+                      <div className="mt-6">
+                        <h4 className="font-semibold text-card-foreground">Tools We Use:</h4>
+                        <div className="mt-2 flex flex-wrap items-center gap-4">
+                          {service.toolLogos.map((tool) => (
+                            <div key={tool} className="flex items-center gap-2">
+                              <Image src={tools[tool as keyof typeof tools]} alt={`${tool} logo`} width={16} height={16} className="rounded-sm" />
+                              <span className="text-sm text-muted-foreground">{tool}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
-                    <Badge variant="secondary" className="mt-4 whitespace-normal bg-green-500/10 text-green-600 text-base">
-                      <strong>Result:</strong> {service.caseStudy.results}
-                    </Badge>
+
+                  </CardContent>
+                  <div className="bg-primary/5 p-8">
+                      <h4 className="font-headline text-lg font-semibold text-primary">What You Get:</h4>
+                      <ul className="mt-2 space-y-3">
+                        {service.features.map((feature, i) => (
+                          <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                            <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-500" />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                  </div>
                 </div>
               </Card>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>

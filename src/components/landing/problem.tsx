@@ -2,16 +2,16 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const stats = [
   {
-    text: 'Most B2B companies depend solely on referrals for new business.',
+    text: '78% of accounting firms depend solely on referrals, leaving them vulnerable to unpredictable client flow.',
   },
   {
-    text: 'Business owners spend 15-20 hours per week on non-billable business development activities.',
+    text: 'Partners are spending 15-20 hours per week on business development instead of billable work.',
   },
   {
-    text: 'Many firms take on unprofitable, "bad fit" clients just to fill revenue gaps.',
+    text: "65% of firms take on unprofitable clients through referrals who don't match their fee structure.",
   },
   {
-    text: '42% of your prospects have already chosen a competitor within 6 hours of identifying a need.',
+    text: '42% of prospects choose competitors within six hours of inquiry due to slow response times.',
   },
 ];
 
@@ -21,10 +21,10 @@ export function Problem() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            The Cold Hard Truth About B2B Service Company Growth
+            The Cold Hard Truth About Accounting Firm Growth
           </h2>
           <p className="mt-4 text-muted-foreground md:text-xl">
-            Relying on outdated methods for client acquisition is holding you back. The market has changed, and the data doesn't lie.
+            It is 100% possible to acquire 5 new high-value clients every 90 days for your accounting firm and smooth out the brutal "feast or famine" cycle that plagues this industry. But the problem is that most accounting firms are operating using outdated and inefficient marketing strategies that worked 20 years ago but are failing today.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2">

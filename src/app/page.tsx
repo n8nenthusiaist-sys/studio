@@ -3,6 +3,7 @@ import { Header } from '@/components/landing/header';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { Problem } from '@/components/landing/problem';
 import { Services } from '@/components/landing/services';
+import { CaseStudies } from '@/components/landing/case-studies';
 import { Comparison } from '@/components/landing/comparison';
 import { Benefits } from '@/components/landing/benefits';
 import { CtaSection } from '@/components/landing/cta-section';
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col">
         <Header />
         <Services />
+        <CaseStudies />
         <TargetAudience />
         <Problem />
         <Comparison />

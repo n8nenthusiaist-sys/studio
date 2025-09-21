@@ -2,19 +2,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { XCircle, CheckCircle } from 'lucide-react';
 
 const inHouseCons = [
-  'High costs for data tools ($5k+/yr)',
-  'Steep learning curve for outreach',
-  'Risk of damaging domain reputation',
-  'Time-consuming (15-20 hrs/week)',
-  'Inconsistent results without expertise',
+  'Spend $15,000-30,000 on tools and testing over 6+ months',
+  'Dedicate 2-3 hours daily to system management',
+  'Risk domain blacklisting and compliance issues',
+  'Learn through expensive trial and error',
+  'Take time away from billable client work',
 ];
 
 const withUsPros = [
-  'Access to our full tech stack',
-  'Expert campaign management',
-  'Protected domain and high deliverability',
-  'Frees up 20+ hours per week',
-  'Predictable pipeline of meetings',
+  'Start generating qualified meetings within 2-3 weeks',
+  'Complete done-for-you system with ongoing optimization',
+  'No time investment required from your team',
+  'Proven processes that avoid common pitfalls',
+  'Focus entirely on serving clients and closing deals',
 ];
 
 export function Comparison() {
@@ -26,7 +26,7 @@ export function Comparison() {
             Why Working With Us Makes Sense
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            You could try to build an outbound system yourself, but the time, cost, and risk are significant. Here's a comparison.
+            You have two options. You could try to build an outbound system yourself, but the time, cost, and risk are significant. Here's a comparison.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

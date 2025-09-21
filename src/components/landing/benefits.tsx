@@ -1,11 +1,11 @@
 import { Check } from 'lucide-react';
 
 const benefits = [
-  'A predictable pipeline of qualified meetings booked directly in your calendar.',
-  'Consistent, predictable monthly revenue streams you can count on.',
-  'A roster of premium, high-value clients who respect your expertise.',
-  'Eliminate uncertainty and anxiety about where your next client will come from.',
-  '15+ hours per week freed up from manual prospecting to focus on client work.',
+  'You\'ll sleep peacefully knowing your calendar is filled with high-quality prospect meetings, regardless of season or economic conditions.',
+  'You\'ll establish predictable monthly revenue streams that smooth out the brutal feast-or-famine cycle plaguing most accounting firms.',
+  'You\'ll attract premium clients who understand your value and are willing to pay professional fees instead of bargain hunting.',
+  'You\'ll eliminate the stress of wondering where next month\'s revenue will come from.',
+  'You\'ll have 15+ hours per week freed up from manual prospecting to focus on billable client work.',
 ];
 
 export function Benefits() {

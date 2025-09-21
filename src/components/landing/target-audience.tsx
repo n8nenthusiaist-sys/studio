@@ -10,23 +10,23 @@ import type { LucideIcon } from 'lucide-react';
 const audienceList: { icon: LucideIcon; text: string }[] = [
   {
     icon: Target,
-    text: 'CEO, Founder, or Owner of a B2B service company.',
+    text: 'You are the Managing Partner, Founder, or Owner whose company is part of the Accounting and Tax Advisory space.',
   },
   {
     icon: Calendar,
-    text: 'Looking for a predictable and consistent way to acquire new clients.',
+    text: 'You are looking for a predictable way to get new high-paying clients month after month, not just during tax season.',
   },
   {
     icon: Handshake,
-    text: 'Currently relying on referrals and networking, which are inconsistent.',
+    text: "You are currently relying on referrals & networking events but understand that it's not a predictable way to acquire new clients & makes growing the firm extremely difficult.",
   },
   {
     icon: TrendingUp,
-    text: 'Experiencing unpredictable revenue streams ("revenue rollercoaster").',
+    text: "You wake up in the middle of the night in cold sweats wondering how you'll hit your revenue goals when 82% of your income is concentrated in just 4 months of the year.",
   },
   {
     icon: Award,
-    text: 'Want to attract premium clients who see the value in their services.',
+    text: "You're tired of taking on unprofitable clients just to fill gaps, when you know there are businesses out there that would gladly pay premium fees for quality accounting services.",
   },
 ];
 
@@ -39,7 +39,7 @@ export function TargetAudience() {
             Who Is This For?
           </h2>
           <p className="mt-4 text-muted-foreground md:text-xl">
-            Our outbound prospecting campaigns are designed for a specific type of B2B service company. See if you fit the profile.
+            This is for you if you fit the following profile.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-1">

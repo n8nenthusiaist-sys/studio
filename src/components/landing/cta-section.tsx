@@ -6,9 +6,9 @@ import { Scheduler } from './scheduler';
 
 const learnings = [
   "Whether cold outreach is a good fit for your specific situation.",
-  "How our strategies could be adapted to your unique market and ICP.",
-  "Realistic expectations for results and timeline for your company.",
-  "Best practices for B2B lead generation you can implement immediately.",
+  "How our strategies could be adapted to your unique market and services.",
+  "Realistic expectations for results and timeline for your firm.",
+  "Best practices for lead generation in the accounting industry you can implement immediately.",
   "Answers to your technical questions about email marketing and automation.",
 ];
 
@@ -22,7 +22,7 @@ export function CtaSection() {
               Free Discovery Call - No Strings Attached
             </h2>
             <p className="max-w-xl text-muted-foreground md:text-xl">
-              This is NOT a high-pressure sales pitch. It's a 15-30 minute chat to see if we can genuinely help you. If not, we'll tell you.
+              This is NOT a high-pressure sales pitch. It's a 15-30 minute chat to see if we can genuinely help you. If not, we'll tell you, and you'll get free advice either way.
             </p>
           </div>
           <div className="space-y-4">
