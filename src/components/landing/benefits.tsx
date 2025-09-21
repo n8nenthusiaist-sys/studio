@@ -20,7 +20,7 @@ export function Benefits() {
               width={120}
               height={120}
               data-ai-hint="profile picture"
-              className="mx-auto mb-6 rounded-full"
+              className="mx-auto mb-6 rounded-full ring-2 ring-offset-4 ring-offset-card ring-primary"
             />
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             What You Get When Working With Us
