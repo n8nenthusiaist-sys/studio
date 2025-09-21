@@ -58,8 +58,8 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
-        protocol: 'httpshttps',
+       {
+        protocol: 'https',
         hostname: 'smartlead.ai',
         port: '',
         pathname: '/**',
