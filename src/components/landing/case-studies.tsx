@@ -37,7 +37,7 @@ const caseStudies = [
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    Icon: LineChart,
+    Icon: Users,
     className: 'md:col-span-2',
     features: [
       'Multi-step outreach sequence',
@@ -52,7 +52,7 @@ const caseStudies = [
     company: 'Shane Snow - Author/Journalist',
     results: '45.5% Open Rate, Double Industry Average',
     insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
-    Icon: BadgePercent,
+    Icon: MailOpen,
     features: [
         'Deep research on prospect background',
         'Customized email introductions',
@@ -66,7 +66,7 @@ const caseStudies = [
     company: 'Jake Jorgovan - Creative Strategist',
     results: '$12,030 Generated from Dream Clients',
     insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
-    Icon: PiggyBank,
+    Icon: DollarSign,
     features: [
         'Ideal client profiling',
         'In-depth problem identification',
@@ -81,7 +81,7 @@ const caseStudies = [
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
     className: 'md:col-span-2',
-    Icon: Scaling,
+    Icon: TrendingUp,
     features: [
       'Automated prospecting funnels',
       'Scalable content delivery',
@@ -115,15 +115,15 @@ export function CaseStudies() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Proven Results: What Cold Outreach and High-Quality Lead Generation Can Actually Achieve
+            Proven Results: What High-Quality Lead Generation Can Achieve
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            The pattern across all success stories: Response rates between 1.7% - 13.4% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
+            The pattern across all success stories: high response rates are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {caseStudies.map((study, index) => (
-            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className || ''}`}>
+            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className || ''} sm:w-full`}>
                <div className="flex flex-col justify-between h-full">
                  <div>
                  <div className="relative h-56 w-full bg-primary/5 flex items-center justify-center">
