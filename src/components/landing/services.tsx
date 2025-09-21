@@ -148,7 +148,7 @@ export function Services() {
                       <Button size="sm" asChild className="w-full md:w-auto">
                         <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
                           <Calendar className="mr-2 h-4 w-4" />
-                          Book a Free Discovery Call
+                          Implement Now
                         </a>
                       </Button>
                     </div>

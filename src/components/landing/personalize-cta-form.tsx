@@ -87,7 +87,7 @@ export function PersonalizeCtaForm() {
                 ) : (
                   <Sparkles className="mr-2 h-4 w-4" />
                 )}
-                Implement now
+                Generate My Personalized CTA
               </Button>
             </form>
           </Form>
