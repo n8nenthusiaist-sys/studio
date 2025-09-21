@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/landing/navbar';
 import { Header } from '@/components/landing/header';
-import { CaseStudies } from '@/components/landing/case-studies';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { Problem } from '@/components/landing/problem';
 import { Services } from '@/components/landing/services';
@@ -15,7 +14,6 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-1 flex-col">
         <Header />
-        <CaseStudies />
         <TargetAudience />
         <Problem />
         <Services />

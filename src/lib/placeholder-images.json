@@ -8,22 +8,34 @@
       "imageHint": "business team"
     },
     {
-      "id": "case-study-chart-1",
-      "description": "A bar chart showing positive response rates.",
-      "imageUrl": "https://picsum.photos/seed/chart1/400/250",
-      "imageHint": "bar chart"
+      "id": "case-study-1",
+      "description": "A chart showing data analysis and insights.",
+      "imageUrl": "https://picsum.photos/seed/data-analysis/600/400",
+      "imageHint": "data analysis"
     },
     {
-      "id": "case-study-chart-2",
-      "description": "A line graph indicating growth.",
-      "imageUrl": "https://picsum.photos/seed/chart2/400/250",
-      "imageHint": "line graph"
+      "id": "case-study-2",
+      "description": "Screenshots of successful social media marketing campaigns.",
+      "imageUrl": "https://picsum.photos/seed/social-media-marketing/600/400",
+      "imageHint": "social media marketing"
     },
     {
-      "id": "case-study-chart-3",
-      "description": "A pie chart displaying campaign results.",
-      "imageUrl": "https://picsum.photos/seed/chart3/400/250",
-      "imageHint": "pie chart"
+      "id": "case-study-3",
+      "description": "An illustration representing server security and data protection.",
+      "imageUrl": "https://picsum.photos/seed/server-security/600/400",
+      "imageHint": "server security"
+    },
+    {
+      "id": "case-study-4",
+      "description": "People shaking hands over a signed contract.",
+      "imageUrl": "https://picsum.photos/seed/contract-signing/600/400",
+      "imageHint": "contract signing"
+    },
+    {
+      "id": "case-study-5",
+      "description": "An illustration of an AI chatbot interacting with users.",
+      "imageUrl": "https://picsum.photos/seed/ai-chatbot/600/400",
+      "imageHint": "AI chatbot"
     },
     {
       "id": "benefits-background",

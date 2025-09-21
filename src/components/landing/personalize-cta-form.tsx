@@ -54,9 +54,9 @@ export function PersonalizeCtaForm() {
 
   return (
     <div className="space-y-4">
-      <Card className="bg-background/10 border-accent">
+      <Card className="bg-primary text-primary-foreground border-accent">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 font-headline text-xl text-white">
+          <CardTitle className="flex items-center gap-2 font-headline text-xl">
             <Sparkles className="text-accent" />
             <span>Try Our AI-Powered CTA Generator</span>
           </CardTitle>
@@ -69,11 +69,11 @@ export function PersonalizeCtaForm() {
                 name="companyDescription"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-white">Your Company Description</FormLabel>
+                    <FormLabel>Your Company Description</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="e.g., We are a B2B SaaS company that helps marketing teams optimize their ad spend..."
-                        className="resize-none text-card-foreground"
+                        className="resize-none text-card-foreground bg-card"
                         {...field}
                       />
                     </FormControl>
@@ -81,7 +81,7 @@ export function PersonalizeCtaForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" disabled={isPending} className="w-full bg-accent hover:bg-accent/90 text-primary-foreground">
+              <Button type="submit" disabled={isPending} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
                 {isPending ? (
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 ) : (
@@ -95,9 +95,9 @@ export function PersonalizeCtaForm() {
       </Card>
       {(isPending || personalizedCta) && (
         <div className="mt-4 animate-in fade-in-0">
-          <h3 className="font-semibold text-lg text-white">Your Personalized Call to Action:</h3>
-          <div className="mt-2 rounded-lg border border-accent bg-background/10 p-4 text-white">
-            {isPending ? <div className="h-5 w-3/4 animate-pulse rounded-md bg-white/20" /> : <p>{personalizedCta}</p>}
+          <h3 className="font-semibold text-lg">Your Personalized Call to Action:</h3>
+          <div className="mt-2 rounded-lg border border-primary bg-background/10 p-4">
+            {isPending ? <div className="h-5 w-3/4 animate-pulse rounded-md bg-foreground/20" /> : <p>{personalizedCta}</p>}
           </div>
         </div>
       )}
