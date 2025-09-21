@@ -35,8 +35,8 @@ const caseStudies = [
     company: 'LeadFuze - Lead Generation Software',
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
-    imageUrl: 'https://picsum.photos/seed/automation/600/400',
-    imageHint: 'automation gears'
+    imageUrl: 'https://i.imgur.com/Qp2m3iM.png',
+    imageHint: 'lead generation form'
   },
   {
     company: 'Crazy Eye Marketing - Mobile App Client',
