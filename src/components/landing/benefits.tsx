@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import Image from 'next/image';
 
 const benefits = [
   'You\'ll sleep peacefully knowing your calendar is filled with high-quality prospect meetings, regardless of season or economic conditions.',
@@ -13,6 +14,13 @@ export function Benefits() {
     <section id="benefits" className="w-full bg-card py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
+           <Image
+              src="/profile.jpg"
+              alt="Founder Profile Picture"
+              width={120}
+              height={120}
+              className="mx-auto mb-6 rounded-full"
+            />
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             What You Get When Working With Us
           </h2>
