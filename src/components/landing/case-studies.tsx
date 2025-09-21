@@ -28,7 +28,7 @@ const caseStudies = [
     company: 'Jake Jorgovan - Creative Strategist',
     results: '$12,030 Generated from Dream Clients',
     insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
-    imageUrl: 'https://picsum.photos/seed/strategy/600/400',
+    imageUrl: 'https://i.imgur.com/gNUKxI3.png',
     imageHint: 'focused work'
   },
   {
@@ -42,7 +42,7 @@ const caseStudies = [
     company: 'Crazy Eye Marketing - Mobile App Client',
     results: 'Nearly 10% Reply Rate Across All Emails',
     insights: 'Each follow-up is equally valuable. There are no diminishing returns on well-crafted, persistent outreach.',
-    imageUrl: 'https://picsum.photos/seed/consistency/600/400',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrh5Bot8seZf0-3IRYF4Zj1uhKixuXJDta2A&s',
     imageHint: 'consistent results'
   },
    {
@@ -68,8 +68,8 @@ export function CaseStudies() {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group">
-              <div className="relative h-48 w-full">
+            <Card key={index} className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group h-full">
+              <div className="relative h-56 w-full">
                 <Image
                     src={study.imageUrl}
                     alt={study.insights}
