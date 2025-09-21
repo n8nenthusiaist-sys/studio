@@ -15,7 +15,7 @@ export function Benefits() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
            <Image
-              src="https://picsum.photos/seed/person/120/120"
+              src="https://i.imgur.com/3L3A3dC.png"
               alt="Founder Profile Picture"
               width={120}
               height={120}

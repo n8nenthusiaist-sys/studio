@@ -59,7 +59,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpshttps',
         hostname: 'smartlead.ai',
         port: '',
         pathname: '/**',
@@ -91,6 +91,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'images.ui8.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
         port: '',
         pathname: '/**',
       }
