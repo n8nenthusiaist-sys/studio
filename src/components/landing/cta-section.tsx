@@ -1,8 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Lightbulb } from 'lucide-react';
+import { Lightbulb, Calendar } from 'lucide-react';
 import { PersonalizeCtaForm } from './personalize-cta-form';
-import { Scheduler } from './scheduler';
 
 const learnings = [
   "Whether cold outreach is a good fit for your specific situation.",
@@ -42,9 +41,15 @@ export function CtaSection() {
         </div>
         <div className="flex items-center justify-center">
           <Card className="w-full max-w-md animate-in fade-in-0 zoom-in-95 duration-500 bg-background">
-            <CardContent className="p-4 md:p-6">
+            <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center text-center">
+              <Calendar className="h-16 w-16 text-primary mb-4" />
               <h3 className="mb-4 text-center font-headline text-xl font-semibold text-card-foreground">Schedule Your Free Discovery Call</h3>
-              <Scheduler />
+              <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your firm grow.</p>
+              <Button size="lg" asChild>
+                <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+                  Book Your Call
+                </a>
+              </Button>
             </CardContent>
           </Card>
         </div>

@@ -19,7 +19,7 @@ export function Header() {
             Without Having To Rely On Unpredictable Referrals
           </p>
           <Button size="lg" asChild>
-            <a href="#cta">Schedule Free Discovery Call</a>
+            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Schedule Free Discovery Call</a>
           </Button>
         </div>
         <div className="relative flex h-full min-h-[300px] w-full items-center justify-center lg:min-h-[400px]">
