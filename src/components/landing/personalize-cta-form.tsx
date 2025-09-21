@@ -73,7 +73,7 @@ export function PersonalizeCtaForm() {
                     <FormControl>
                       <Textarea
                         placeholder="e.g., We are a B2B SaaS company that helps marketing teams optimize their ad spend..."
-                        className="resize-none text-card-foreground bg-card"
+                        className="resize-none text-card-foreground bg-background"
                         {...field}
                       />
                     </FormControl>
@@ -87,7 +87,7 @@ export function PersonalizeCtaForm() {
                 ) : (
                   <Sparkles className="mr-2 h-4 w-4" />
                 )}
-                Generate My Personalized CTA
+                Implement now
               </Button>
             </form>
           </Form>
