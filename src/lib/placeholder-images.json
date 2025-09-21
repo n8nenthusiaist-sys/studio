@@ -4,8 +4,8 @@
     {
       "id": "hero-image",
       "description": "A professional hero image of a business team collaborating.",
-      "imageUrl": "https://picsum.photos/seed/business-team/1200/800",
-      "imageHint": "business team"
+      "imageUrl": "https://picsum.photos/seed/tech-startup/1200/800",
+      "imageHint": "tech startup"
     },
     {
       "id": "case-study-1",

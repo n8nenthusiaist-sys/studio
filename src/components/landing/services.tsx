@@ -6,18 +6,13 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
-import {
   Database,
   Mail,
   Server,
   FileText,
   BrainCircuit,
   type LucideIcon,
+  CheckCircle,
 } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -128,68 +123,62 @@ export function Services() {
             We provide a complete, done-for-you system that solves your biggest growth challenges and generates a predictable stream of high-quality leads.
           </p>
         </div>
-        <div className="mx-auto grid max-w-6xl gap-12">
+        <div className="mx-auto grid max-w-7xl gap-8">
           {services.map((service, index) => {
             const caseStudyImage = PlaceHolderImages.find(
               (img) => img.id === service.caseStudy.imageId
             );
             return (
-              <div
+              <Card
                 key={index}
-                className="grid gap-8 md:grid-cols-2 animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
+                className="grid overflow-hidden rounded-xl border-border/40 bg-background shadow-lg transition-all hover:shadow-2xl md:grid-cols-2 animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
               >
-                <Card>
-                  <CardHeader className="flex flex-row items-start gap-4">
+                <CardContent className="flex flex-col p-8">
+                  <div className="flex items-center gap-4">
                     <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                       <service.icon className="h-6 w-6" />
                     </div>
-                    <div className="flex-1">
-                      <CardTitle>{service.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="mb-4 text-muted-foreground">
-                      {service.description}
-                    </p>
-                    <Accordion type="single" collapsible>
-                      <AccordionItem value="item-1">
-                        <AccordionTrigger>What you get</AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                            {service.features.map((feature, i) => (
-                              <li key={i}>{feature}</li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </CardContent>
-                </Card>
-                <Card className="flex flex-col">
-                  <CardHeader>
-                    <CardTitle>{service.caseStudy.company} Case Study</CardTitle>
-                    <CardDescription>
+                    <CardTitle className="flex-1 text-xl">{service.title}</CardTitle>
+                  </div>
+                  <CardDescription className="mt-4">
+                    {service.description}
+                  </CardDescription>
+
+                  <div className="mt-6">
+                    <h4 className="font-semibold text-card-foreground">What you get:</h4>
+                    <ul className="mt-2 space-y-2">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                           <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-500" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </CardContent>
+                <div className="bg-primary/5 p-8">
+                    <h4 className="font-headline text-lg font-semibold text-primary">{service.caseStudy.company} Case Study</h4>
+                    <p className="mt-2 text-sm text-muted-foreground">
                       <span className="font-semibold text-card-foreground">Problem: </span>
                       {service.caseStudy.problem}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow space-y-4">
+                    </p>
                     {caseStudyImage && (
-                      <Image
-                        src={caseStudyImage.imageUrl}
-                        alt={caseStudyImage.description}
-                        width={600}
-                        height={400}
-                        className="rounded-lg border object-cover shadow-lg aspect-[3/2]"
-                        data-ai-hint={service.caseStudy.imageHint}
-                      />
+                      <div className="mt-4 overflow-hidden rounded-lg">
+                        <Image
+                          src={caseStudyImage.imageUrl}
+                          alt={caseStudyImage.description}
+                          width={600}
+                          height={400}
+                          className="w-full object-cover transition-transform duration-300 hover:scale-105"
+                          data-ai-hint={service.caseStudy.imageHint}
+                        />
+                      </div>
                     )}
-                     <Badge variant="secondary" className="whitespace-normal bg-green-500/10 text-green-600">
+                    <Badge variant="secondary" className="mt-4 whitespace-normal bg-green-500/10 text-green-600 text-base">
                       <strong>Result:</strong> {service.caseStudy.results}
                     </Badge>
-                  </CardContent>
-                </Card>
-              </div>
+                </div>
+              </Card>
             );
           })}
         </div>

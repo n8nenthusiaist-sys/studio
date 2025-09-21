@@ -14,9 +14,9 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-1 flex-col">
         <Header />
+        <Services />
         <TargetAudience />
         <Problem />
-        <Services />
         <Comparison />
         <Benefits />
         <CtaSection />
