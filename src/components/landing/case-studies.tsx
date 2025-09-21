@@ -18,15 +18,23 @@ import {
   MailCheck,
   Zap,
   Users,
+  Award,
+  ListChecks,
+  Repeat,
+  Split,
+  Crosshair,
+  UserCheck,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import Image from 'next/image';
 
 const caseStudies = [
   {
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    icon: AreaChart,
+    imageUrl: '/ambition-case-study.png',
+    imageHint: 'growth chart',
     className: 'md:col-span-2',
     features: [
       'Multi-step outreach sequence',
@@ -35,26 +43,45 @@ const caseStudies = [
       'Targeted lead segmentation',
       'Performance tracking and optimization'
     ],
-    featureIcon: TrendingUp,
+    featureIcon: Repeat,
   },
   {
     company: 'Shane Snow - Author/Journalist',
     results: '45.5% Open Rate, Double Industry Average',
     insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
-    icon: MailOpen,
+    imageUrl: 'https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png',
+    imageHint: 'email open rate',
+    features: [
+        'Deep research on prospect background',
+        'Customized email introductions',
+        'Reference to specific articles/work',
+        'High-relevance value proposition',
+        'Manual quality assurance on every email'
+    ],
+    featureIcon: UserCheck,
   },
   {
     company: 'Jake Jorgovan - Creative Strategist',
     results: '$12,030 Generated from Dream Clients',
     insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
-    icon: DollarSign,
+    imageUrl: 'https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png',
+    imageHint: 'dollar sign',
+    features: [
+        'Ideal client profiling',
+        'In-depth problem identification',
+        'Value-first outreach messaging',
+        'Focus on high-ticket services',
+        'Nurturing high-value relationships'
+    ],
+    featureIcon: Award,
   },
   {
     company: 'LeadFuze - Lead Generation Software',
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
-    icon: Scale,
     className: 'md:col-span-2',
+    imageUrl: 'https://picsum.photos/seed/lead-generation-software/600/400',
+    imageHint: 'software dashboard',
     features: [
       'Automated prospecting funnels',
       'Scalable content delivery',
@@ -65,17 +92,12 @@ const caseStudies = [
     featureIcon: Zap,
   },
    {
-    company: 'Crazy Eye Marketing - Mobile App Client',
-    results: 'Nearly 10% Reply Rate Across All Emails',
-    insights: 'Each follow-up is equally valuable. There are no diminishing returns on well-crafted, persistent outreach.',
-    icon: BarChart,
-  },
-   {
     company: 'Marco Massaro - Web Consultancy',
     results: '$15,000 project from a single cold email campaign',
     insights: 'Hyper-specific targeting of ideal clients combined with a direct, attention-grabbing (though improvable) email yields high response rates.',
-    icon: Target,
     className: 'md:col-span-3',
+    imageUrl: 'https://picsum.photos/seed/web-consultancy/600/400',
+    imageHint: 'web design',
      features: [
       'Hyper-targeted audience research',
       'Compelling, direct-response copywriting',
@@ -83,7 +105,7 @@ const caseStudies = [
       'Clear call-to-action',
       'Rapid client conversion'
     ],
-    featureIcon: Users,
+    featureIcon: Crosshair,
   },
 ];
 
@@ -99,21 +121,25 @@ export function CaseStudies() {
             The pattern across all success stories: Response rates between 1.7% - 13.4% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((study, index) => (
-            <Card key={index} className={`flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group h-full ${study.className}`}>
+            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className}`}>
                <div className="flex flex-col justify-between h-full">
                  <div>
-                   <CardHeader className="flex-row items-center gap-4">
-                     <div className="bg-primary/10 p-3 rounded-lg">
-                       <study.icon className="h-8 w-8 text-primary" />
-                     </div>
-                    <div>
+                  <div className="relative h-56 w-full">
+                    <Image
+                        src={study.imageUrl}
+                        alt={study.company}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={study.imageHint}
+                      />
+                  </div>
+                   <CardHeader>
                       <CardTitle>{study.company}</CardTitle>
                       <CardDescription className="text-primary font-bold text-lg">{study.results}</CardDescription>
-                    </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow flex flex-col justify-between">
                     <p className="text-sm text-muted-foreground mb-4">
                       <strong>Key Insight:</strong> {study.insights}
                     </p>
@@ -133,8 +159,8 @@ export function CaseStudies() {
                   </CardContent>
                 </div>
                 <CardContent className="pt-6">
-                  <Button asChild variant="outline" className="w-full">
-                    <a href="https://www.levelingup.com/casestudies/6-cold-email-case-studies-great-reply-rates/" target="_blank" rel="noopener noreferrer">See More</a>
+                  <Button size="sm" asChild className="w-full">
+                    <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Book a Free Discovery Call</a>
                   </Button>
                 </CardContent>
                </div>
