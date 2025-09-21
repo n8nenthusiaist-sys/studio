@@ -1,3 +1,35 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A professional hero image of a business team collaborating.",
+      "imageUrl": "https://picsum.photos/seed/business-team/1200/800",
+      "imageHint": "business team"
+    },
+    {
+      "id": "case-study-chart-1",
+      "description": "A bar chart showing positive response rates.",
+      "imageUrl": "https://picsum.photos/seed/chart1/400/250",
+      "imageHint": "bar chart"
+    },
+    {
+      "id": "case-study-chart-2",
+      "description": "A line graph indicating growth.",
+      "imageUrl": "https://picsum.photos/seed/chart2/400/250",
+      "imageHint": "line graph"
+    },
+    {
+      "id": "case-study-chart-3",
+      "description": "A pie chart displaying campaign results.",
+      "imageUrl": "https://picsum.photos/seed/chart3/400/250",
+      "imageHint": "pie chart"
+    },
+    {
+      "id": "benefits-background",
+      "description": "A subtle, professional background for the benefits section.",
+      "imageUrl": "https://picsum.photos/seed/pro-background/1600/900",
+      "imageHint": "abstract background"
+    }
+  ]
 }
