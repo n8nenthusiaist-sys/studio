@@ -53,25 +53,30 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpss',
         hostname: 'instantly.ai',
         port: '',
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpss',
         hostname: 'smartlead.ai',
         port: '',
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpss',
         hostname: 'phantombuster.com',
         port: '',
         pathname: '/**',
       },
     ],
   },
+  devIndicators: {
+    allowedDevOrigins: [
+        '*.cluster-v6vfua76y5hvquszcbrvi5d4oi.cloudworkstations.dev',
+    ]
+  }
 };
 
 export default nextConfig;
