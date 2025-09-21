@@ -41,13 +41,13 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https' ,
         hostname: 'www.zerobounce.net',
         port: '',
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https' ,
         hostname: 'www.millionverifier.com',
         port: '',
         pathname: '/**',
@@ -67,6 +67,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'phantombuster.com',
+        port: '',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
         port: '',
         pathname: '/**',
       },

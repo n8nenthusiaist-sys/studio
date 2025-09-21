@@ -14,7 +14,7 @@ const caseStudies = [
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    imageUrl: 'https://picsum.photos/seed/persistence/600/400',
+    imageUrl: 'https://i.imgur.com/L4c7wLh.png',
     imageHint: 'growth chart'
   },
   {
