@@ -1,6 +1,14 @@
+'use client';
 import { Logo } from './logo';
+import React, { useEffect, useState } from 'react';
 
 export function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="w-full border-t border-border/40 bg-card">
       <div className="container mx-auto px-4 py-8 md:px-6">
@@ -9,7 +17,7 @@ export function Footer() {
             <Logo />
           </div>
           <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} OrbytLynx Team. All rights reserved.</p>
+            <p>&copy; {currentYear} OrbytLynx Team. All rights reserved.</p>
             <a href="mailto:hello@orbytlynx.com" className="hover:text-primary">hello@orbytlynx.com</a>
           </div>
           <div className="flex items-center justify-center md:justify-end">
