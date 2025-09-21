@@ -1,5 +1,4 @@
 import { Check } from 'lucide-react';
-import Image from 'next/image';
 
 const benefits = [
   'You\'ll sleep peacefully knowing your calendar is filled with high-quality prospect meetings, regardless of season or economic conditions.',
@@ -13,8 +12,8 @@ export function Benefits() {
   return (
     <section id="benefits" className="w-full bg-card py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 px-4 md:px-0">
-          <div className="space-y-4 text-center md:text-left">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="space-y-4">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               What You Get When Working With Us
             </h2>
@@ -22,18 +21,8 @@ export function Benefits() {
               This is about more than just leads. It's about transforming your business from the ground up.
             </p>
           </div>
-          <div className="flex justify-center md:justify-end">
-            <Image
-              src="/profile-pig.png"
-              alt="Founder Profile Picture"
-              width={250}
-              height={250}
-              data-ai-hint="profile picture"
-              className="rounded-full ring-2 ring-offset-4 ring-offset-card ring-primary"
-            />
-          </div>
         </div>
-        <div className="mx-auto mt-16 max-w-5xl grid gap-6">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-6">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-4 animate-in fade-in-0 slide-in-from-bottom-10 duration-500">
               <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-green-500/10 text-green-600">
