@@ -15,7 +15,7 @@ export function Benefits() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
            <Image
-              src="https://i.imgur.com/rE3o23L.png"
+              src="https://storage.googleapis.com/project-os-prod/images/b63c713b-21d9-4363-b855-3843d1a3c737"
               alt="Founder Profile Picture"
               width={120}
               height={120}

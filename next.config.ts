@@ -64,7 +64,7 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
+       {
         protocol: 'https',
         hostname: 'phantombuster.com',
         port: '',
@@ -91,6 +91,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'images.ui8.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
         port: '',
         pathname: '/**',
       }
