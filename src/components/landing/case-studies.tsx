@@ -33,8 +33,7 @@ const caseStudies = [
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    imageUrl: '/ambition-case-study.png',
-    imageHint: 'growth chart',
+    Icon: TrendingUp,
     className: 'md:col-span-2',
     features: [
       'Multi-step outreach sequence',
@@ -49,8 +48,7 @@ const caseStudies = [
     company: 'Shane Snow - Author/Journalist',
     results: '45.5% Open Rate, Double Industry Average',
     insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
-    imageUrl: 'https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png',
-    imageHint: 'email open rate',
+    Icon: MailOpen,
     features: [
         'Deep research on prospect background',
         'Customized email introductions',
@@ -64,8 +62,7 @@ const caseStudies = [
     company: 'Jake Jorgovan - Creative Strategist',
     results: '$12,030 Generated from Dream Clients',
     insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
-    imageUrl: 'https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png',
-    imageHint: 'dollar sign',
+    Icon: DollarSign,
     features: [
         'Ideal client profiling',
         'In-depth problem identification',
@@ -80,8 +77,7 @@ const caseStudies = [
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
     className: 'md:col-span-2',
-    imageUrl: 'https://picsum.photos/seed/lead-generation-software/600/400',
-    imageHint: 'software dashboard',
+    Icon: Zap,
     features: [
       'Automated prospecting funnels',
       'Scalable content delivery',
@@ -91,13 +87,12 @@ const caseStudies = [
     ],
     featureIcon: Zap,
   },
-   {
+  {
     company: 'Marco Massaro - Web Consultancy',
     results: '$15,000 project from a single cold email campaign',
     insights: 'Hyper-specific targeting of ideal clients combined with a direct, attention-grabbing (though improvable) email yields high response rates.',
     className: 'md:col-span-3',
-    imageUrl: 'https://picsum.photos/seed/web-consultancy/600/400',
-    imageHint: 'web design',
+    Icon: Crosshair,
      features: [
       'Hyper-targeted audience research',
       'Compelling, direct-response copywriting',
@@ -108,6 +103,7 @@ const caseStudies = [
     featureIcon: Crosshair,
   },
 ];
+
 
 export function CaseStudies() {
   return (
@@ -121,19 +117,13 @@ export function CaseStudies() {
             The pattern across all success stories: Response rates between 1.7% - 13.4% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {caseStudies.map((study, index) => (
-            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className}`}>
+            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className || ''}`}>
                <div className="flex flex-col justify-between h-full">
                  <div>
-                  <div className="relative h-56 w-full">
-                    <Image
-                        src={study.imageUrl}
-                        alt={study.company}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={study.imageHint}
-                      />
+                 <div className="relative h-56 w-full bg-primary/5 flex items-center justify-center">
+                    <study.Icon className="h-24 w-24 text-primary" />
                   </div>
                    <CardHeader>
                       <CardTitle>{study.company}</CardTitle>
