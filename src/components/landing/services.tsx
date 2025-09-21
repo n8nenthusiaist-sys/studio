@@ -37,7 +37,7 @@ const services = [
       'High-quality prospect databases with verified contacts',
       'Email verification through ZeroBounce & MillionVerifier',
       'Automated lead generation process that runs continuously',
-      'Option to pay per qualified lead or purchase a system',
+      'Option to purchase an entire system',
     ],
     toolLogos: ['Apollo.io', 'LinkedIn Sales Navigator', 'ZeroBounce', 'MillionVerifier']
   },

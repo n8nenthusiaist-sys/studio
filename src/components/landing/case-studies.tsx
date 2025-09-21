@@ -8,23 +8,13 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer
-} from 'recharts';
 
 const caseStudies = [
   {
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    imageUrl: '/case-study-jake-jorgovan.png',
+    imageUrl: "https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png",
     imageHint: 'growth chart'
   },
   {

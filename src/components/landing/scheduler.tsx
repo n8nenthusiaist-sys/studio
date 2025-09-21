@@ -14,6 +14,7 @@ export function Scheduler() {
   const [selectedTime, setSelectedTime] = React.useState<string | null>(null);
 
   React.useEffect(() => {
+    // This will only run on the client, after the initial render
     setDate(new Date());
   }, []);
 
