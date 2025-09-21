@@ -93,12 +93,6 @@ const nextConfig: NextConfig = {
         hostname: 'images.ui8.net',
         port: '',
         pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.imgur.com',
-        port: '',
-        pathname: '/**',
       }
     ],
   },
