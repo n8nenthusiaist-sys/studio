@@ -45,9 +45,9 @@ export function CtaSection() {
               <Calendar className="h-16 w-16 text-primary mb-4" />
               <h3 className="mb-4 text-center font-headline text-xl font-semibold text-card-foreground">Schedule Your Free Discovery Call</h3>
               <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your firm grow.</p>
-              <Button size="lg" asChild>
+              <Button size="sm" asChild>
                 <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
-                  Book Your Call
+                  Interested?
                 </a>
               </Button>
             </CardContent>

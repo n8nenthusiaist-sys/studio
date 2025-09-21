@@ -143,8 +143,8 @@ export function Services() {
                         </div>
                       </div>
                     )}
-                     <Button asChild className="mt-6">
-                        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Schedule a Free Discovery Call</a>
+                     <Button size="sm" asChild className="mt-6">
+                        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Interested?</a>
                     </Button>
                   </CardContent>
                   <div className="bg-primary/5 p-8">

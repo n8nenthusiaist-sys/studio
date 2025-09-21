@@ -18,8 +18,8 @@ export function Header() {
           <p className="max-w-xl text-lg text-muted-foreground md:text-xl">
             Without Having To Rely On Unpredictable Referrals
           </p>
-          <Button size="lg" asChild>
-            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Schedule Free Discovery Call</a>
+          <Button size="sm" asChild>
+            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Interested?</a>
           </Button>
         </div>
         <div className="relative flex h-full min-h-[300px] w-full items-center justify-center lg:min-h-[400px]">

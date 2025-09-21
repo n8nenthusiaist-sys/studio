@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 's3-alpha.figma.com',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
   devIndicators: {
