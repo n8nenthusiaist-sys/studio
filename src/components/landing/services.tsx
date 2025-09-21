@@ -13,6 +13,7 @@ import {
   BrainCircuit,
   type LucideIcon,
   CircleCheckBig,
+  Calendar,
 } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '../ui/button';
@@ -129,25 +130,28 @@ export function Services() {
                     <CardDescription className="mt-4 flex-grow">
                       {service.description}
                     </CardDescription>
-
-                    {service.toolLogos.length > 0 && (
-                      <div className="mt-6">
-                        <h4 className="font-semibold text-card-foreground">Tools We Use:</h4>
-                        <div className="mt-2 flex flex-wrap items-center gap-4">
-                          {service.toolLogos.map((tool) => (
-                            <div key={tool} className="flex items-center gap-2">
-                              <Image src={tools[tool as keyof typeof tools]} alt={`${tool} logo`} width={16} height={16} className="rounded-sm" />
-                              <span className="text-sm text-muted-foreground">{tool}</span>
-                            </div>
-                          ))}
+                    
+                    <div className="mt-6 flex flex-col gap-4">
+                      {service.toolLogos.length > 0 && (
+                        <div>
+                          <h4 className="font-semibold text-card-foreground">Tools We Use:</h4>
+                          <div className="mt-2 flex flex-wrap items-center gap-4">
+                            {service.toolLogos.map((tool) => (
+                              <div key={tool} className="flex items-center gap-2">
+                                <Image src={tools[tool as keyof typeof tools]} alt={`${tool} logo`} width={16} height={16} className="rounded-sm" />
+                                <span className="text-sm text-muted-foreground">{tool}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    )}
-                     <Button size="sm" asChild className="mt-6">
-                        <a href="https://www.levelingup.com/casestudies/6-cold-email-case-studies-great-reply-rates/" target="_blank" rel="noopener noreferrer">
-                          See how to build
+                      )}
+                      <Button size="sm" asChild className="w-full md:w-auto">
+                        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+                          <Calendar className="mr-2 h-4 w-4" />
+                          Book a Free Discovery Call
                         </a>
-                    </Button>
+                      </Button>
+                    </div>
                   </CardContent>
                   <div className="bg-primary/5 p-8">
                       <h4 className="font-headline text-lg font-semibold text-primary">What You Get:</h4>
