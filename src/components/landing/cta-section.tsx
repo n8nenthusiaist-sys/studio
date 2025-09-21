@@ -47,7 +47,7 @@ export function CtaSection() {
               <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your firm grow.</p>
               <Button size="sm" asChild>
                 <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
-                  Interested?
+                  Book a Free Discovery Call
                 </a>
               </Button>
             </CardContent>

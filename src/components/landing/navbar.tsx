@@ -25,7 +25,9 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-4">
           <Button size="sm" asChild>
-            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Interested?</a>
+            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+              Book a Free Discovery Call
+            </a>
           </Button>
         </div>
       </div>

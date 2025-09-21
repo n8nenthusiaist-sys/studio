@@ -1,17 +1,14 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Header() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
-
   return (
     <section
       id="header"
       className="relative w-full overflow-hidden bg-card py-20 md:py-32"
     >
-      <div className="container z-10 mx-auto grid grid-cols-1 items-center gap-12 text-center lg:grid-cols-2 lg:text-left">
-        <div className="flex flex-col items-center gap-6 lg:items-start">
+      <div className="container z-10 mx-auto flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center gap-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-5xl lg:text-6xl">
             For Accounting Firms... How To Get An Extra 5 High-Value Clients Every 90 Days Through Laser Targeted Outbound Prospecting Campaigns
           </h1>
@@ -19,20 +16,21 @@ export function Header() {
             Without Having To Rely On Unpredictable Referrals
           </p>
           <Button size="sm" asChild>
-            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Interested?</a>
+            <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+              Book a Free Discovery Call
+            </a>
           </Button>
         </div>
-        <div className="relative flex h-full min-h-[300px] w-full items-center justify-center lg:min-h-[400px]">
-          {heroImage && (
-             <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="rounded-lg border object-cover shadow-2xl"
-                data-ai-hint={heroImage.imageHint}
-                priority
-             />
-          )}
+        <div className="relative mt-12 h-auto w-full max-w-4xl">
+          <Image
+            src="https://images.ui8.net/uploads/features-page-8_1748066539881.jpg"
+            alt="AI-powered sales outreach dashboard"
+            width={1200}
+            height={800}
+            className="rounded-lg border object-cover shadow-2xl"
+            data-ai-hint="dashboard analytics"
+            priority
+          />
         </div>
       </div>
     </section>

@@ -87,6 +87,12 @@ const nextConfig: NextConfig = {
         hostname: 's3-alpha.figma.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.ui8.net',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
