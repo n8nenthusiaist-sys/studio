@@ -144,8 +144,8 @@ export function Services() {
                       </div>
                     )}
                      <Button size="sm" asChild className="mt-6">
-                        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
-                          Book a Free Discovery Call
+                        <a href="https://www.levelingup.com/casestudies/6-cold-email-case-studies-great-reply-rates/" target="_blank" rel="noopener noreferrer">
+                          See how to build
                         </a>
                     </Button>
                   </CardContent>
