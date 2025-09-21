@@ -8,36 +8,29 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
-  AreaChart,
+  Users,
   MailOpen,
   DollarSign,
-  Scale,
-  Target,
-  BarChart,
   TrendingUp,
-  MailCheck,
-  Zap,
-  Users,
-  Award,
-  ListChecks,
+  Target,
   Repeat,
-  Split,
-  Crosshair,
   UserCheck,
-  LineChart,
-  BadgePercent,
-  PiggyBank,
+  Award,
+  Zap,
+  Crosshair,
+  BarChart,
+  ClipboardCheck,
   Scaling,
+  AreaChart,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import Image from 'next/image';
 
 const caseStudies = [
   {
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    Icon: Users,
+    Icon: BarChart,
     className: 'md:col-span-2',
     features: [
       'Multi-step outreach sequence',
@@ -53,7 +46,7 @@ const caseStudies = [
     results: '45.5% Open Rate, Double Industry Average',
     insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
     Icon: MailOpen,
-    features: [
+     features: [
         'Deep research on prospect background',
         'Customized email introductions',
         'Reference to specific articles/work',
@@ -81,11 +74,11 @@ const caseStudies = [
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
     className: 'md:col-span-2',
-    Icon: TrendingUp,
+    Icon: Scaling,
     features: [
       'Automated prospecting funnels',
       'Scalable content delivery',
-      'Predictable revenue modeling',
+      'Predictive revenue modeling',
       'Lead nurturing sequences',
       'Integration with CRM systems'
     ],
@@ -154,7 +147,7 @@ export function CaseStudies() {
                 </div>
                 <CardContent className="pt-6">
                   <Button size="sm" asChild className="w-full">
-                    <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Book a Free Discovery Call</a>
+                    <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Learn More</a>
                   </Button>
                 </CardContent>
                </div>
