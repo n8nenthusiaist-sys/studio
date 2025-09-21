@@ -10,7 +10,7 @@ export function Header() {
       <div className="container z-10 mx-auto flex flex-col items-center justify-center text-center">
         <div className="flex flex-col items-center gap-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-5xl lg:text-6xl">
-            For Accounting Firms... How To Get An Extra 5 High-Value Clients Every 90 Days Through Laser Targeted Outbound Prospecting Campaigns
+            How To Get An Extra 5 High-Value Clients Every 90 Days Through Laser Targeted Outbound Prospecting Campaigns
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
             Without Having To Rely On Unpredictable Referrals
