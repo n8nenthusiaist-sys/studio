@@ -7,50 +7,53 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { AreaChart, MailOpen, DollarSign, Scale, Target, BarChart } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
-const caseStudies = [
+const caseStudies: {
+  company: string;
+  results: string;
+  insights: string;
+  icon: LucideIcon;
+  className?: string;
+}[] = [
   {
     company: 'Ambition - Software Productivity Co.',
     results: '73 new leads in 6 weeks',
     insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
-    imageUrl: "https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png",
-    imageHint: 'growth chart'
+    icon: AreaChart,
+    className: 'md:col-span-2'
   },
   {
     company: 'Shane Snow - Author/Journalist',
     results: '45.5% Open Rate, Double Industry Average',
     insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
-    imageUrl: 'https://picsum.photos/seed/personalization/600/400',
-    imageHint: 'executive meeting'
+    icon: MailOpen,
   },
   {
     company: 'Jake Jorgovan - Creative Strategist',
     results: '$12,030 Generated from Dream Clients',
     insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
-    imageUrl: 'https://s3-alpha.figma.com/hub/file/6148929815/6356af53-56e0-4a52-99fb-c357e2a736c1-cover.png',
-    imageHint: 'focused work'
+    icon: DollarSign,
   },
   {
     company: 'LeadFuze - Lead Generation Software',
     results: 'Scaled from $0 to $30k/month in 12 months',
     insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
-    imageUrl: '/find-prospects-form.png',
-    imageHint: 'lead generation form'
+    icon: Scale,
+    className: 'md:col-span-2'
   },
   {
     company: 'Crazy Eye Marketing - Mobile App Client',
     results: 'Nearly 10% Reply Rate Across All Emails',
     insights: 'Each follow-up is equally valuable. There are no diminishing returns on well-crafted, persistent outreach.',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrh5Bot8seZf0-3IRYF4Zj1uhKixuXJDta2A&s',
-    imageHint: 'consistent results'
+    icon: BarChart,
   },
    {
     company: 'Marco Massaro - Web Consultancy',
     results: '$15,000 project from a single cold email campaign',
     insights: 'Hyper-specific targeting of ideal clients combined with a direct, attention-grabbing (though improvable) email yields high response rates.',
-    imageUrl: 'https://picsum.photos/seed/targeting/600/400',
-    imageHint: 'marketing target'
+    icon: Target,
   },
 ];
 
@@ -66,27 +69,23 @@ export function CaseStudies() {
             The pattern across all success stories: Response rates between 1.7% - 13.4% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group h-full">
-              <div className="relative h-56 w-full">
-                <Image
-                    src={study.imageUrl}
-                    alt={study.insights}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint={study.imageHint}
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>{study.company}</CardTitle>
-                <CardDescription className="text-primary font-bold text-lg">{study.results}</CardDescription>
+            <Card key={index} className={`flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group h-full ${study.className}`}>
+               <CardHeader className="flex-row items-center gap-4">
+                 <div className="bg-primary/10 p-3 rounded-lg">
+                   <study.icon className="h-8 w-8 text-primary" />
+                 </div>
+                <div>
+                  <CardTitle>{study.company}</CardTitle>
+                  <CardDescription className="text-primary font-bold text-lg">{study.results}</CardDescription>
+                </div>
               </CardHeader>
               <CardContent className="flex flex-grow flex-col justify-between">
                 <p className="text-sm text-muted-foreground mb-4">
                   <strong>Key Insight:</strong> {study.insights}
                 </p>
-                <Button asChild variant="outline" className="mt-auto">
+                <Button asChild variant="outline" className="mt-auto w-full">
                   <a href="https://www.levelingup.com/casestudies/6-cold-email-case-studies-great-reply-rates/" target="_blank" rel="noopener noreferrer">See More</a>
                 </Button>
               </CardContent>
