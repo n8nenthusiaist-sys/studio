@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import { Button } from '@/components/ui/button';
 
 export function Header() {
@@ -12,7 +12,7 @@ export function Header() {
           <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-5xl lg:text-6xl">
             For Accounting Firms... How To Get An Extra 5 High-Value Clients Every 90 Days Through Laser Targeted Outbound Prospecting Campaigns
           </h1>
-          <p className="max-w-xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
             Without Having To Rely On Unpredictable Referrals
           </p>
           <Button size="sm" asChild>
@@ -21,16 +21,13 @@ export function Header() {
             </a>
           </Button>
         </div>
-        <div className="relative mt-12 h-auto w-full max-w-4xl">
-          <Image
-            src="https://images.ui8.net/uploads/features-page-8_1748066539881.jpg"
-            alt="AI-powered sales outreach dashboard"
-            width={1200}
-            height={800}
-            className="rounded-lg border object-cover shadow-2xl"
-            data-ai-hint="dashboard analytics"
-            priority
-          />
+        <div className="relative mt-12 w-full max-w-4xl aspect-video">
+          <iframe
+            src="https://www.loom.com/embed/7bf2a62603544bcfafa701a348607464"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg border shadow-2xl absolute top-0 left-0 w-full h-full"
+          ></iframe>
         </div>
       </div>
     </section>
