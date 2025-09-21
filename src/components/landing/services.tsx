@@ -15,6 +15,7 @@ import {
   CircleCheckBig,
 } from 'lucide-react';
 import Image from 'next/image';
+import { Button } from '../ui/button';
 
 const tools = {
   'Apollo.io': 'https://www.apollo.io/favicon.ico',
@@ -142,7 +143,9 @@ export function Services() {
                         </div>
                       </div>
                     )}
-
+                     <Button asChild className="mt-auto">
+                        <a href="#cta">Schedule a Free Discovery Call</a>
+                    </Button>
                   </CardContent>
                   <div className="bg-primary/5 p-8">
                       <h4 className="font-headline text-lg font-semibold text-primary">What You Get:</h4>
