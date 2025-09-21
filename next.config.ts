@@ -53,19 +53,19 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'httpss',
+        protocol: 'https',
         hostname: 'instantly.ai',
         port: '',
         pathname: '/**',
       },
       {
-        protocol: 'httpss',
+        protocol: 'https',
         hostname: 'smartlead.ai',
         port: '',
         pathname: '/**',
       },
       {
-        protocol: 'httpss',
+        protocol: 'https',
         hostname: 'phantombuster.com',
         port: '',
         pathname: '/**',
