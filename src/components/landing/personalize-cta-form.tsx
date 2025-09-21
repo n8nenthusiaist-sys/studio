@@ -54,9 +54,9 @@ export function PersonalizeCtaForm() {
 
   return (
     <div className="space-y-4">
-      <Card className="bg-primary text-primary-foreground border-accent">
+      <Card className="bg-primary/5 text-primary-foreground border-accent">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 font-headline text-xl">
+          <CardTitle className="flex items-center gap-2 font-headline text-xl text-foreground">
             <Sparkles className="text-accent" />
             <span>Try Our AI-Powered CTA Generator</span>
           </CardTitle>
@@ -69,7 +69,7 @@ export function PersonalizeCtaForm() {
                 name="companyDescription"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your Company Description</FormLabel>
+                    <FormLabel className="text-foreground">Your Company Description</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="e.g., We are a B2B SaaS company that helps marketing teams optimize their ad spend..."
