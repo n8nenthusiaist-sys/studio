@@ -10,8 +10,12 @@ const timeSlots = [
 ];
 
 export function Scheduler() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
+  const [date, setDate] = React.useState<Date | undefined>(undefined);
   const [selectedTime, setSelectedTime] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    setDate(new Date());
+  }, []);
 
   return (
     <div className="flex flex-col items-center space-y-4">
@@ -33,8 +37,10 @@ export function Scheduler() {
           </Button>
         ))}
       </div>
-      <Button className="w-full" size="lg" disabled={!date || !selectedTime}>
-        Confirm & Schedule
+      <Button asChild className="w-full" size="lg" disabled={!date || !selectedTime}>
+        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+          Confirm & Schedule
+        </a>
       </Button>
     </div>
   );
