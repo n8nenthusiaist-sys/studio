@@ -12,10 +12,8 @@ import {
   FileText,
   BrainCircuit,
   type LucideIcon,
-  CheckCircle,
-  Linkedin
+  CircleCheckBig,
 } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 
 const tools = {
@@ -35,10 +33,10 @@ const services = [
     description:
       'We build highly targeted prospect lists using premium databases. We identify decision-makers at companies that match your exact ideal client profile, so you stop wasting time on unqualified leads.',
     features: [
-      'High-quality prospect databases with verified contacts',
-      'Email verification through ZeroBounce & MillionVerifier',
+      'High-quality prospect databases with verified contact information',
+      'Email and LinkedIn verification through ZeroBounce and MillionVerifier',
       'Automated lead generation process that runs continuously',
-      'Option to pay per qualified lead or purchase a system',
+      'Option to purchase an entire system',
     ],
     toolLogos: ['Apollo.io', 'LinkedIn Sales Navigator', 'ZeroBounce', 'MillionVerifier']
   },
@@ -52,6 +50,7 @@ const services = [
       'Personalized LinkedIn outreach sequences',
       'Multi-channel approach for maximum reach',
       'All campaigns run under your brand with your messaging',
+      'Option to purchase an entire system'
     ],
     toolLogos: ['Instantly', 'Smartlead', 'Phantombuster']
   },
@@ -64,7 +63,9 @@ const services = [
       'Complete domain and email infrastructure setup',
       'Proper authentication to avoid spam folders',
       'Automated email health monitoring and optimization',
+      '24/7 domain and email health monitoring',
       'Blacklist monitoring and recovery protocols',
+      'Option to purchase an entire system'
     ],
     toolLogos: []
   },
@@ -78,6 +79,7 @@ const services = [
       'Industry-specific pain point identification',
       'Detailed company research reports stored in database',
       'Ongoing copy optimization based on response rates',
+      'Option to purchase an entire system'
     ],
     toolLogos: []
   },
@@ -91,6 +93,7 @@ const services = [
       'Intelligent lead qualification and scoring',
       'Automatic calendar scheduling across time zones',
       'Custom RAG agent trained on your services and expertise',
+      'Option to purchase an entire system'
     ],
     toolLogos: []
   },
@@ -146,7 +149,7 @@ export function Services() {
                       <ul className="mt-2 space-y-3">
                         {service.features.map((feature, i) => (
                           <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                            <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-500" />
+                            <CircleCheckBig className="mt-1 h-5 w-5 flex-shrink-0 text-green-500" />
                             <span>{feature}</span>
                           </li>
                         ))}

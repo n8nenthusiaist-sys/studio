@@ -7,105 +7,52 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  Bar,
-  BarChart,
-  Line,
-  LineChart,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-} from 'recharts';
-import {
-  ChartTooltipContent,
-  ChartContainer,
-  type ChartConfig,
-} from '@/components/ui/chart';
+import Image from 'next/image';
 
 const caseStudies = [
   {
     company: 'Ambition - Software Productivity Co.',
-    details: [
-      'Targeted 578 VPs of Sales & Sales Ops',
-      'Executed an 8-email follow-up sequence',
-    ],
-    results: '12.6% Response Rate',
-    insights: 'The 8th follow-up generated as many leads as the 2nd. Systematic persistence is key.',
-    chartData: [
-        { email: '1st', responses: 5 }, { email: '2nd', responses: 12 },
-        { email: '3rd', responses: 8 }, { email: '4th', responses: 9 },
-        { email: '5th', responses: 6 }, { email: '6th', responses: 7 },
-        { email: '7th', responses: 10 }, { email: '8th', responses: 12 }
-    ],
-    chartType: 'line'
+    results: '73 new leads in 6 weeks',
+    insights: 'Systematic persistence pays off. The 8th follow-up generated as many leads as the 2nd email, proving that most sales reps give up too early.',
+    imageUrl: 'https://picsum.photos/seed/persistence/600/400',
+    imageHint: 'growth chart'
   },
   {
     company: 'Shane Snow - Author/Journalist',
-    details: [
-      'Contacted 1,000 Fortune 500 & Inc 500 C-level executives',
-      'Focused on personalized "Why me?" messaging',
-    ],
-    results: '45.5% Open Rate',
-    insights: 'High-level execs open emails, but only respond to personal relevance.',
-    chartData: [
-        { metric: 'Open Rate', value: 45.5, industryAvg: 21.3 },
-    ],
-    chartType: 'bar'
+    results: '45.5% Open Rate, Double Industry Average',
+    insights: 'Personalization is critical. High-level executives open emails but only respond when they see personal relevance answering "why me?".',
+    imageUrl: 'https://picsum.photos/seed/personalization/600/400',
+    imageHint: 'executive meeting'
   },
   {
     company: 'Jake Jorgovan - Creative Strategist',
-    details: [
-      'Targeted 20-25 "dream clients" instead of a mass list',
-      'Researched 2-3 specific problems on each website before outreach',
-    ],
-    results: '$12,030 Generated',
-    insights: 'A research-heavy, personalized approach dramatically outperforms volume.',
-    chartData: [
-        { approach: "Mass Outreach", revenue: 2500 },
-        { approach: "Personalized", revenue: 12030 }
-    ],
-    chartType: 'bar'
+    results: '$12,030 Generated from Dream Clients',
+    insights: 'A research-heavy, personalized approach identifying specific prospect problems dramatically outperforms a high-volume strategy.',
+    imageUrl: 'https://picsum.photos/seed/strategy/600/400',
+    imageHint: 'focused work'
   },
   {
     company: 'LeadFuze - Lead Generation Software',
-    details: [
-      'Used a systematic "Question, Value Prop, CTA" formula',
-      'Follow-up sequences included case studies and value-adds',
-    ],
-    results: 'Scaled to $30k/month in 12 months',
-    insights: 'Automation combined with valuable content creates scalable results.',
-    chartData: [
-        { month: "Jan", revenue: 0 }, { month: "Mar", revenue: 5000 },
-        { month: "Jun", revenue: 15000 }, { month: "Sep", revenue: 25000 },
-        { month: "Dec", revenue: 30000 }
-    ],
-    chartType: 'line'
+    results: 'Scaled from $0 to $30k/month in 12 months',
+    insights: 'Automation combined with valuable content in follow-ups creates scalable and predictable revenue-generating systems.',
+    imageUrl: 'https://picsum.photos/seed/automation/600/400',
+    imageHint: 'automation gears'
   },
   {
     company: 'Crazy Eye Marketing - Mobile App Client',
-    details: [
-      'Sent a 3-email sequence to 2,160 verified prospects',
-      'Achieved consistent response rates across all emails',
-    ],
-    results: 'Nearly 10% Reply Rate',
-    insights: 'Each follow-up is equally valuable; there are no diminishing returns.',
-    chartData: [
-        { email: "Email 1", rate: 9.8 },
-        { email: "Email 2", rate: 9.5 },
-        { email: "Email 3", rate: 9.6 }
-    ],
-    chartType: 'bar'
+    results: 'Nearly 10% Reply Rate Across All Emails',
+    insights: 'Each follow-up is equally valuable. There are no diminishing returns on well-crafted, persistent outreach.',
+    imageUrl: 'https://picsum.photos/seed/consistency/600/400',
+    imageHint: 'consistent results'
+  },
+   {
+    company: 'Marco Massaro - Web Consultancy',
+    results: '$15,000 project from a single cold email campaign',
+    insights: 'Hyper-specific targeting of ideal clients combined with a direct, attention-grabbing (though improvable) email yields high response rates.',
+    imageUrl: 'https://picsum.photos/seed/targeting/600/400',
+    imageHint: 'marketing target'
   },
 ];
-
-const chartConfig = {
-  value: { label: 'Value', color: 'hsl(var(--primary))' },
-  responses: { label: 'Responses', color: 'hsl(var(--accent))' },
-  revenue: { label: 'Revenue', color: 'hsl(var(--primary))' },
-  rate: { label: 'Rate (%)', color: 'hsl(var(--accent))' },
-  industryAvg: { label: 'Industry Avg', color: 'hsl(var(--muted-foreground))' },
-} satisfies ChartConfig;
 
 export function CaseStudies() {
   return (
@@ -116,50 +63,38 @@ export function CaseStudies() {
             Proven Results: What Cold Outreach and High-Quality Lead Generation Can Actually Achieve
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            The pattern across all success stories: Response rates between 1.7% - 12.6% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
+            The pattern across all success stories: Response rates between 1.7% - 13.4% are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500">
+            <Card key={index} className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-10 duration-500 overflow-hidden group">
+              <div className="relative h-48 w-full">
+                <Image
+                    src={study.imageUrl}
+                    alt={study.insights}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={study.imageHint}
+                />
+              </div>
               <CardHeader>
                 <CardTitle>{study.company}</CardTitle>
-                <CardDescription>{study.results}</CardDescription>
+                <CardDescription className="text-primary font-bold text-lg">{study.results}</CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-grow flex-col space-y-4">
-                <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
-                  {study.details.map((detail, i) => (
-                    <li key={i}>{detail}</li>
-                  ))}
-                </ul>
-                <div className="h-[150px] w-full flex-grow">
-                  <ChartContainer config={chartConfig} className="h-full w-full">
-                    {study.chartType === 'line' ? (
-                        <LineChart accessibilityLayer data={study.chartData} margin={{ top: 20, right: 20, left: -20, bottom: 0 }}>
-                            <CartesianGrid vertical={false} />
-                            <XAxis dataKey={Object.keys(study.chartData[0])[0]} tickLine={false} axisLine={false} tickMargin={8} fontSize={12} />
-                            <YAxis tickLine={false} axisLine={false} tickMargin={8} />
-                            <Tooltip cursor={false} content={<ChartTooltipContent indicator="dot" hideLabel />} />
-                            <Line dataKey={Object.keys(study.chartData[0])[1]} type="monotone" strokeWidth={2} stroke={chartConfig[Object.keys(study.chartData[0])[1] as keyof typeof chartConfig]?.color || 'hsl(var(--primary))'} dot={false} />
-                        </LineChart>
-                    ) : (
-                        <BarChart accessibilityLayer data={study.chartData} margin={{ top: 20, right: 20, left: -20, bottom: 0 }}>
-                            <CartesianGrid vertical={false} />
-                            <XAxis dataKey={Object.keys(study.chartData[0])[0]} tickLine={false} axisLine={false} tickMargin={8} fontSize={12} />
-                            <YAxis dataKey={Object.keys(study.chartData[0])[1]} tickLine={false} axisLine={false} tickMargin={8} />
-                            <Tooltip cursor={false} content={<ChartTooltipContent indicator="dot" hideLabel />} />
-                            <Bar dataKey={Object.keys(study.chartData[0])[1]} radius={8} fill={chartConfig[Object.keys(study.chartData[0])[1] as keyof typeof chartConfig]?.color || 'hsl(var(--primary))'} />
-                             {study.chartData[0].industryAvg && <Bar dataKey="industryAvg" radius={8} fill="hsl(var(--muted-foreground))" />}
-                        </BarChart>
-                    )}
-                  </ChartContainer>
-                </div>
-                <Badge variant="secondary" className="whitespace-normal bg-accent/20 text-accent-foreground">
+              <CardContent className="flex flex-grow flex-col">
+                <Badge variant="secondary" className="whitespace-normal bg-accent/20 text-accent-foreground h-full">
                   <strong>Key Insight:</strong> {study.insights}
                 </Badge>
               </CardContent>
             </Card>
           ))}
+        </div>
+         <div className="mt-16 mx-auto max-w-4xl text-center">
+          <h3 className="font-headline text-2xl font-bold tracking-tighter sm:text-3xl">The Blueprint for Success</h3>
+          <p className="mt-4 text-muted-foreground md:text-lg">
+            There are many steps involved in a successful cold email campaign, and for most people, it can be pretty time-consuming. You have to identify who you’re targeting, find their contact information, and then craft a personalized message with a compelling call to action. To make things more efficient, you can use software tools to automate your processes and track your data. By understanding the templates and numbers from these successful campaigns, you can create a system that is large enough to change the course of your business.
+          </p>
         </div>
       </div>
     </section>
