@@ -13,7 +13,7 @@ export function Benefits() {
   return (
     <section id="benefits" className="w-full bg-card py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 px-4 md:px-0">
           <div className="space-y-4 text-center md:text-left">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               What You Get When Working With Us
