@@ -15,10 +15,11 @@ export function Benefits() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
            <Image
-              src="/profile.jpg"
+              src="https://picsum.photos/seed/founder/120/120"
               alt="Founder Profile Picture"
               width={120}
               height={120}
+              data-ai-hint="profile picture"
               className="mx-auto mb-6 rounded-full"
             />
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

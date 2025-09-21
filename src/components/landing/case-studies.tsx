@@ -22,6 +22,11 @@ import {
   ClipboardCheck,
   Scaling,
   AreaChart,
+  CalendarCheck,
+  MailCheck,
+  Briefcase,
+  Bot,
+  Filter,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -88,7 +93,7 @@ const caseStudies = [
     company: 'Marco Massaro - Web Consultancy',
     results: '$15,000 project from a single cold email campaign',
     insights: 'Hyper-specific targeting of ideal clients combined with a direct, attention-grabbing (though improvable) email yields high response rates.',
-    className: 'md:col-span-3',
+    className: 'md:grid-cols-3 md:col-span-3',
     Icon: Target,
      features: [
       'Hyper-targeted audience research',
@@ -114,9 +119,9 @@ export function CaseStudies() {
             The pattern across all success stories: high response rates are achievable, follow-up is where the real results happen, and personalization outperforms generic messaging.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {caseStudies.map((study, index) => (
-            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className || ''} sm:w-full`}>
+            <Card key={index} className={`flex flex-col overflow-hidden group h-full ${study.className || ''}`}>
                <div className="flex flex-col justify-between h-full">
                  <div>
                  <div className="relative h-56 w-full bg-primary/5 flex items-center justify-center">
