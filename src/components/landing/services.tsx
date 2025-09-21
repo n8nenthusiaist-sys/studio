@@ -14,6 +14,7 @@ import {
   type LucideIcon,
   CircleCheckBig,
   Calendar,
+  Shapes,
 } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '../ui/button';
@@ -96,6 +97,20 @@ const services = [
       'Automatic calendar scheduling across time zones',
       'Custom RAG agent trained on your services and expertise',
       'Option to purchase an entire system'
+    ],
+    toolLogos: []
+  },
+  {
+    icon: Shapes,
+    title: 'Custom Projects & Consulting',
+    description:
+      "Have a unique challenge or a project that doesn't fit our standard services? We offer custom consulting and project-based work to tackle your most complex lead generation and outreach problems.",
+    features: [
+      'Bespoke strategy development for unique use cases',
+      'Custom tool and workflow integrations',
+      'In-depth market analysis and feasibility reports',
+      'Dedicated project management and support',
+      'Flexible engagement and pricing models',
     ],
     toolLogos: []
   },
