@@ -23,9 +23,9 @@ const tools = {
   'Apollo.io': 'https://www.apollo.io/favicon.ico',
   'LinkedIn Sales Navigator': 'https://static.licdn.com/aero-v1/sc/h/al73832cl2r1826ok2ag9xvsb',
   'ZeroBounce': 'https://www.zerobounce.net/favicon-32x32.png',
-  'MillionVerifier': 'https://www.millionverifier.com/favicon.ico',
-  'Instantly': 'https://instantly.ai/favicon.ico',
-  'Smartlead': 'https://smartlead.ai/favicon.ico',
+  'MillionVerifier': 'https://i.imgur.com/84QTq2F.png',
+  'Instantly': 'https://i.imgur.com/b24x63y.png',
+  'Smartlead': 'https://i.imgur.com/h5T2jV5.png',
   'Phantombuster': 'https://phantombuster.com/favicon.ico',
 }
 
