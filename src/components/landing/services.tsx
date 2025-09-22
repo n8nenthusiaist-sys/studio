@@ -34,69 +34,64 @@ const services = [
     icon: Database,
     title: 'Strategic Lead Generation & Database Intelligence',
     description:
-      'We build highly targeted prospect lists using premium databases. We identify decision-makers at companies that match your exact ideal client profile, so you stop wasting time on unqualified leads.',
+      'We build hyper-targeted prospect lists using premium B2B databases. We identify key decision-makers at companies that match your exact ideal client profile, so you stop wasting time on unqualified leads.',
     features: [
-      'High-quality prospect databases with verified contacts',
-      'Email verification through ZeroBounce & MillionVerifier',
-      'Automated lead generation process that runs continuously',
-      'Option to purchase an entire system',
+      'Ideal Client Profile (ICP) development and validation',
+      'Access to premium B2B data sources with millions of contacts',
+      'Automated email and phone number verification',
+      'Continuous database enrichment and hygiene',
     ],
     toolLogos: ['Apollo.io', 'LinkedIn Sales Navigator', 'ZeroBounce', 'MillionVerifier']
   },
   {
     icon: Mail,
-    title: 'Cold Email & LinkedIn Campaign Management',
+    title: 'Multi-Channel Outreach Campaign Management',
     description:
-      'We send over 5,000 personalized emails and 100+ LinkedIn connection requests weekly on your behalf. Our multi-channel approach maximizes reach and runs under your brand.',
+      'We execute high-volume, personalized outreach campaigns across email and LinkedIn. Our multi-touch approach maximizes engagement and ensures your brand stays top-of-mind with key prospects.',
     features: [
-      'Fully managed cold email campaigns',
-      'Personalized LinkedIn outreach sequences',
-      'Multi-channel approach for maximum reach',
+      'Fully managed cold email and LinkedIn campaigns',
+      'A/B testing of messaging, subject lines, and calls-to-action',
+      'Multi-channel sequences for maximum reach and impact',
       'All campaigns run under your brand with your messaging',
-      'Option to purchase an entire system'
     ],
     toolLogos: ['Instantly', 'Smartlead', 'Phantombuster']
   },
   {
     icon: Server,
-    title: 'Email Infrastructure Setup & Management',
+    title: 'Technical Infrastructure & Deliverability Management',
     description:
-      'We handle all the technical backend work that most firms struggle with, including proper DNS setup (MX, DKIM, DMARC) and email warm-up sequences to avoid spam folders.',
+      'We handle all the technical backend work that derails most outreach efforts, including domain setup, DNS configuration (MX, DKIM, DMARC), and email warm-up to ensure you land in the inbox, not the spam folder.',
     features: [
       'Complete domain and email infrastructure setup',
-      'Proper authentication to avoid spam folders',
-      'Automated email health monitoring and optimization',
-      '24/7 domain and email health monitoring',
-      'Blacklist monitoring and recovery protocols',
-      'Option to purchase an entire system'
+      'Proper authentication to maximize deliverability',
+      'Automated email warm-up and health monitoring',
+      'Blacklist monitoring and rapid remediation',
     ],
     toolLogos: []
   },
   {
     icon: FileText,
-    title: 'Ultra-Personalized Email Copywriting',
+    title: 'Hyper-Personalized & AI-Enhanced Copywriting',
     description:
-      'Every email is crafted specifically for each prospect. We conduct detailed research on their company, pain points, and industry challenges to write copy that gets replies.',
+      'Our team writes compelling, personalized copy for every prospect. We research their company, role, and industry challenges to craft messages that resonate and get replies.',
     features: [
-      'Custom icebreakers for each prospect',
-      'Industry-specific pain point identification',
-      'Detailed company research reports stored in database',
-      'Ongoing copy optimization based on response rates',
-      'Option to purchase an entire system'
+      'Custom icebreakers and introductions for each prospect',
+      'Pain-point-driven messaging that speaks to their needs',
+      'AI-powered copy optimization based on performance data',
+      'Value propositions tailored to specific market segments',
     ],
     toolLogos: []
   },
   {
     icon: BrainCircuit,
-    title: 'AI-Powered Response Management & Call Booking',
+    title: 'AI-Powered Response Handling & Appointment Booking',
     description:
-      "Our system automatically responds to interested prospects and books calls while you sleep. We use a trained AI agent with your company information, so you'll never miss an opportunity.",
+      "Our system uses a custom-trained AI agent to manage positive replies, answer questions, and book qualified meetings directly on your sales team's calendar, so you only spend time on sales-ready conversations.",
     features: [
       '24/7 automated response to prospect inquiries',
       'Intelligent lead qualification and scoring',
       'Automatic calendar scheduling across time zones',
-      'Custom RAG agent trained on your services and expertise',
-      'Option to purchase an entire system'
+      'Custom AI agent trained on your services and expertise',
     ],
     toolLogos: []
   },
@@ -122,10 +117,10 @@ export function Services() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Our Cold Outreach Services - What We Actually Do
+            Our Done-For-You B2B Outreach Services
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            We are one of the only companies who've dedicated our entire business to solving the client acquisition problem specifically for accounting firms like yours.
+            We've dedicated our entire business to solving the client acquisition problem for B2B companies like yours. Here's what we actually do.
           </p>
         </div>
         <div className="mx-auto grid max-w-7xl gap-8">

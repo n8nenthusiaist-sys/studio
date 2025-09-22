@@ -18,7 +18,7 @@ export function Footer() {
           </div>
           <div className="flex items-center justify-center md:justify-end">
             <p className="max-w-xs text-sm italic text-muted-foreground">
-              <strong>P.S.</strong> Remember, 78% of accounting firms are still relying solely on referrals while their competitors are implementing systematic outreach. The firms that adapt first will dominate their markets.
+              <strong>P.S.</strong> Remember, most of your competitors are still relying on inconsistent referrals while the top players are building systematic outreach engines. The companies that adapt first will dominate their markets.
             </p>
           </div>
         </div>

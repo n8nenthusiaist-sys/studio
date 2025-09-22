@@ -10,23 +10,23 @@ import type { LucideIcon } from 'lucide-react';
 const audienceList: { icon: LucideIcon; text: string }[] = [
   {
     icon: Target,
-    text: 'You are the Managing Partner, Founder, or Owner whose company is part of the Accounting and Tax Advisory space.',
+    text: 'You are the Founder, CEO, or Head of Sales at a B2B company (like a SaaS, agency, or consultancy).',
   },
   {
     icon: Calendar,
-    text: 'You are looking for a predictable way to get new high-paying clients month after month, not just during tax season.',
+    text: 'You are looking for a predictable way to book qualified sales meetings and acquire new high-value clients every month.',
   },
   {
     icon: Handshake,
-    text: "You are currently relying on referrals & networking events but understand that it's not a predictable way to acquire new clients & makes growing the firm extremely difficult.",
+    text: "You are tired of relying on inconsistent referrals and networking, and you understand it's not a scalable way to grow your business.",
   },
   {
     icon: TrendingUp,
-    text: "You wake up in the middle of the night in cold sweats wondering how you'll hit your revenue goals when 82% of your income is concentrated in just 4 months of the year.",
+    text: "You are struggling to hit your revenue goals because your sales pipeline is either empty or filled with unqualified leads.",
   },
   {
     icon: Award,
-    text: "You're tired of taking on unprofitable clients just to fill gaps, when you know there are businesses out there that would gladly pay premium fees for quality accounting services.",
+    text: "You're tired of competing on price and want to attract premium clients who value your solution and are willing to pay for it.",
   },
 ];
 

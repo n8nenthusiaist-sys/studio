@@ -1,11 +1,12 @@
 import { Check } from 'lucide-react';
 
 const benefits = [
-  'You\'ll sleep peacefully knowing your calendar is filled with high-quality prospect meetings, regardless of season or economic conditions.',
-  'You\'ll establish predictable monthly revenue streams that smooth out the brutal feast-or-famine cycle plaguing most accounting firms.',
-  'You\'ll attract premium clients who understand your value and are willing to pay professional fees instead of bargain hunting.',
-  'You\'ll eliminate the stress of wondering where next month\'s revenue will come from.',
-  'You\'ll have 15+ hours per week freed up from manual prospecting to focus on billable client work.',
+  'Sleep peacefully knowing your calendar is consistently filled with high-quality, pre-qualified sales meetings.',
+  'Establish predictable monthly revenue streams that eliminate the brutal feast-or-famine cycle.',
+  'Attract premium B2B clients who see the value in your offer and are willing to pay professional fees.',
+  'Eliminate the stress and uncertainty of wondering where your next customers will come from.',
+  'Free up 15+ hours per week for your sales team to focus on closing deals instead of manual prospecting.',
+  'Gain a massive competitive advantage in your market by building a scalable client acquisition machine.',
 ];
 
 export function Benefits() {
@@ -18,7 +19,7 @@ export function Benefits() {
               What You Get When Working With Us
             </h2>
             <p className="text-muted-foreground md:text-xl">
-              This is about more than just leads. It's about transforming your business from the ground up.
+              This is about more than just leads. It's about building a predictable and scalable growth engine for your business.
             </p>
           </div>
         </div>

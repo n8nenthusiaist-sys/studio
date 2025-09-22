@@ -4,11 +4,11 @@ import { Lightbulb, Calendar } from 'lucide-react';
 import { PersonalizeCtaForm } from './personalize-cta-form';
 
 const learnings = [
-  "Whether cold outreach is a good fit for your specific situation.",
-  "How our strategies could be adapted to your unique market and services.",
-  "Realistic expectations for results and timeline for your firm.",
-  "Best practices for lead generation in the accounting industry you can implement immediately.",
-  "Answers to your technical questions about email marketing and automation.",
+  "Whether a done-for-you outbound system is a good fit for your specific situation.",
+  "How our strategies could be adapted to your unique market and ideal customer profile.",
+  "Realistic expectations for results and timeline for your business.",
+  "Best practices for B2B lead generation that you can implement immediately.",
+  "Answers to your technical questions about cold outreach, email deliverability, and automation.",
 ];
 
 export function CtaSection() {
@@ -44,7 +44,7 @@ export function CtaSection() {
             <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center text-center">
               <Calendar className="h-16 w-16 text-primary mb-4" />
               <h3 className="mb-4 text-center font-headline text-xl font-semibold text-card-foreground">Schedule Your Free Discovery Call</h3>
-              <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your firm grow.</p>
+              <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your business grow.</p>
               <Button size="sm" asChild>
                 <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
                   Book a Free Discovery Call
