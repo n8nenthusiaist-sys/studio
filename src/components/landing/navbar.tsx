@@ -6,7 +6,7 @@ export function Navbar() {
     { name: 'Results', href: '#results' },
     { name: 'Services', href: '#services' },
     { name: 'About Us', href: '#benefits' },
-    { name: 'FREE Resources', href: '#cta' },
+    { name: 'Resources', href: '#resources' },
   ];
 
   return (

@@ -1,47 +1,82 @@
-
 {
   "placeholderImages": [
     {
       "id": "hero-image",
       "description": "A professional hero image of a business team collaborating.",
-      "imageUrl": "https://picsum.photos/seed/tech-startup/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1628017975063-17b19666cc6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWNoJTIwc3RhcnR1cHxlbnwwfHx8fDE3NTg2MjQzNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tech startup"
     },
     {
       "id": "case-study-1",
       "description": "A chart showing data analysis and insights.",
-      "imageUrl": "https://picsum.photos/seed/data-analysis/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzU4NjgzMDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data analysis"
     },
     {
       "id": "case-study-2",
       "description": "Screenshots of successful social media marketing campaigns.",
-      "imageUrl": "https://picsum.photos/seed/social-media-marketing/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NpYWwlMjBtZWRpYSUyMG1hcmtldGluZ3xlbnwwfHx8fDE3NTg2ODYxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "social media marketing"
     },
     {
       "id": "case-study-3",
       "description": "An illustration representing server security and data protection.",
-      "imageUrl": "https://picsum.photos/seed/server-security/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1690547228166-d7202e7a40b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZXJ2ZXIlMjBzZWN1cml0eXxlbnwwfHx8fDE3NTg3MDA4MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "server security"
     },
     {
       "id": "case-study-4",
       "description": "People shaking hands over a signed contract.",
-      "imageUrl": "https://picsum.photos/seed/contract-signing/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb250cmFjdCUyMHNpZ25pbmd8ZW58MHx8fHwxNzU4NjI4NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "contract signing"
     },
     {
       "id": "case-study-5",
       "description": "An illustration of an AI chatbot interacting with users.",
-      "imageUrl": "https://picsum.photos/seed/ai-chatbot/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxBSSUyMGNoYXRib3R8ZW58MHx8fHwxNzU4NjEwMTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI chatbot"
     },
     {
       "id": "benefits-background",
       "description": "A subtle, professional background for the benefits section.",
-      "imageUrl": "https://picsum.photos/seed/pro-background/1600/900",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzU4Njk2NjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract background"
+    },
+    {
+      "id": "resource-guide-1",
+      "description": "An abstract image for a guide on cold email outreach.",
+      "imageUrl": "https://images.unsplash.com/photo-1685381949388-bb0402fbe133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWFpbCUyMGd1aWRlfGVufDB8fHx8MTc1ODcwMDgyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "email guide"
+    },
+    {
+      "id": "resource-template-1",
+      "description": "An image representing sales script templates.",
+      "imageUrl": "https://images.unsplash.com/photo-1648822145238-16e13a1591da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYWxlcyUyMHNjcmlwdHN8ZW58MHx8fHwxNzU4NzAwODIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sales scripts"
+    },
+    {
+      "id": "resource-playbook-1",
+      "description": "An image for a lead generation playbook.",
+      "imageUrl": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXJrZXRpbmclMjBzdHJhdGVneXxlbnwwfHx8fDE3NTg2MjQ1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing strategy"
+    },
+    {
+      "id": "resource-checklist-1",
+      "description": "An image representing a campaign launch checklist.",
+      "imageUrl": "https://images.unsplash.com/photo-1743385779347-1549dabf1320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9qZWN0JTIwY2hlY2tsaXN0fGVufDB8fHx8MTc1ODcwMDgyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "project checklist"
+    },
+    {
+      "id": "resource-guide-2",
+      "description": "An abstract image for a guide on LinkedIn prospecting.",
+      "imageUrl": "https://images.unsplash.com/photo-1603145733146-ae562a55031e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NTg2OTc1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media"
+    },
+    {
+      "id": "resource-template-2",
+      "description": "An image representing follow-up email sequences.",
+      "imageUrl": "https://images.unsplash.com/photo-1746865028223-7150bcb6e943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbWFpbCUyMHNlcXVlbmNlfGVufDB8fHx8MTc1ODcwMDgyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "email sequence"
     }
   ]
 }

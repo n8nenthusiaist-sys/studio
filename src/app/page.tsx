@@ -8,6 +8,7 @@ import { Comparison } from '@/components/landing/comparison';
 import { Benefits } from '@/components/landing/benefits';
 import { CtaSection } from '@/components/landing/cta-section';
 import { Footer } from '@/components/landing/footer';
+import { FreeResources } from '@/components/landing/free-resources';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Problem />
         <Comparison />
         <Benefits />
+        <FreeResources />
         <CtaSection />
       </main>
       <Footer />
