@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PersonalizeCtaForm } from './personalize-cta-form';
 
 const resources = [
   {
@@ -99,15 +99,10 @@ export function FreeResources() {
           })}
         </div>
 
-        <div className="mt-20 rounded-lg bg-card p-8 text-center shadow-xl">
-            <h3 className="font-headline text-2xl font-bold">Request a Resource</h3>
-            <p className="mt-2 text-muted-foreground">
-                Can't find what you're looking for? Let us know what resource you'd like to see next.
-            </p>
-            <form className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-                <Input type="text" placeholder="e.g., A guide to social media marketing" className="bg-background" />
-                <Button type="submit" className="w-full sm:w-auto">Request</Button>
-            </form>
+        <div className="mt-20 rounded-lg bg-card p-8 shadow-xl flex justify-center">
+            <div className="w-full max-w-2xl">
+                <PersonalizeCtaForm />
+            </div>
         </div>
       </div>
     </section>
