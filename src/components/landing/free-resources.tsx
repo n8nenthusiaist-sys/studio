@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { PersonalizeCtaForm } from './personalize-cta-form';
+import { Input } from '../ui/input';
 
 const resources = [
   {
@@ -99,10 +99,25 @@ export function FreeResources() {
           })}
         </div>
 
-        <div className="mt-20 rounded-lg bg-card p-8 shadow-xl flex justify-center">
-            <div className="w-full max-w-2xl">
-                <PersonalizeCtaForm />
-            </div>
+        <div className="mt-20">
+          <Card className="bg-card shadow-xl">
+            <CardHeader>
+              <CardTitle>Request a Resource</CardTitle>
+              <CardDescription>
+                Have an idea for a resource you'd like to see? Let us know!
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form className="flex flex-col gap-4 sm:flex-row">
+                <Input
+                  type="text"
+                  placeholder="e.g., A guide to A/B testing email copy"
+                  className="flex-grow bg-background"
+                />
+                <Button type="submit">Submit Request</Button>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

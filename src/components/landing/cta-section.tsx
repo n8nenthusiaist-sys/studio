@@ -35,9 +35,6 @@ export function CtaSection() {
               ))}
             </ul>
           </div>
-          <div className="pt-4">
-            <PersonalizeCtaForm />
-          </div>
         </div>
         <div className="flex items-center justify-center">
           <Card className="w-full max-w-md animate-in fade-in-0 zoom-in-95 duration-500 bg-background">
