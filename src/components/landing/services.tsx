@@ -117,7 +117,7 @@ const services = [
       'Dedicated project management and support',
       'Flexible engagement and pricing models',
     ],
-    toolLogos: ['Airtable', 'Google Sheets', 'Notion']
+    toolLogos: ['Airtable', 'Google Sheets', 'n8n']
   },
 ];
 
