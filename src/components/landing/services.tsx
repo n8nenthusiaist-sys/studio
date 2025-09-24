@@ -158,7 +158,9 @@ export function Services() {
                           <div className="mt-2 flex flex-wrap items-center gap-4">
                             {service.toolLogos.map((tool) => (
                               <div key={tool} className="flex items-center gap-2">
-                                <Image src={tools[tool as keyof typeof tools]} alt={`${tool} logo`} width={16} height={16} className="rounded-sm" unoptimized/>
+                                <div className="relative h-4 w-4">
+                                  <Image src={tools[tool as keyof typeof tools]} alt={`${tool} logo`} fill className="rounded-sm object-contain" unoptimized/>
+                                </div>
                                 <span className="text-sm text-muted-foreground">{tool}</span>
                               </div>
                             ))}
