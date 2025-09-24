@@ -11,36 +11,42 @@ const resources = [
     title: 'The Ultimate Guide to Cold Email Outreach',
     description: 'Learn how to write effective cold emails that get responses and book meetings.',
     imageId: 'resource-guide-1',
+    link: '#',
   },
   {
     category: 'TEMPLATES',
     title: 'High-Converting Sales Script Templates',
     description: 'A collection of proven sales scripts for various B2B industries and scenarios.',
     imageId: 'resource-template-1',
+    link: '#',
   },
   {
     category: 'PLAYBOOK',
     title: 'The B2B Lead Generation Playbook',
     description: 'A step-by-step playbook for building a predictable lead generation machine.',
     imageId: 'resource-playbook-1',
+    link: '#',
   },
   {
     category: 'CHECKLIST',
     title: 'Campaign Launch Checklist',
     description: 'Ensure every outbound campaign is set up for success with this comprehensive checklist.',
     imageId: 'resource-checklist-1',
+    link: '#',
   },
   {
     category: 'GUIDE',
     title: 'LinkedIn Prospecting: The Definitive Guide',
     description: 'Master the art of finding and engaging with your ideal clients on LinkedIn.',
     imageId: 'resource-guide-2',
+    link: '#',
   },
   {
-    category: 'TEMPLATES',
-    title: '7 Follow-Up Email Sequences That Convert',
-    description: 'Never let a lead go cold again with these battle-tested follow-up sequences.',
+    category: 'AUTOMATION',
+    title: 'Create an automation in under 5 minutes that sends 100 personalized LinkedIn connects while you sleep (weekly)',
+    description: 'This video will show you how to automate your LinkedIn outreach to save time and book more meetings.',
     imageId: 'resource-template-2',
+    link: 'https://www.loom.com/share/3aee1324234b4379941ae000d7783ac5?sid=11b09372-0124-406f-bcc6-787004accfc5'
   },
 ];
 
@@ -81,7 +87,11 @@ export function FreeResources() {
                   <Badge variant="default" className="mb-2 bg-primary text-primary-foreground">{resource.category}</Badge>
                   <h3 className="font-headline text-xl font-bold">{resource.title}</h3>
                   <p className="mt-2 text-muted-foreground text-sm">{resource.description}</p>
-                  <Button variant="link" className="mt-4 px-0">Read Now &rarr;</Button>
+                  <Button variant="link" className="mt-4 px-0" asChild>
+                    <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                      {resource.link.includes('loom') || resource.link.includes('youtu') ? 'Watch Now' : 'Read Now'} &rarr;
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             );
