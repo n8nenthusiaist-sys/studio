@@ -21,23 +21,23 @@ import { Button } from '../ui/button';
 
 const tools = {
   'Apollo.io': 'https://www.apollo.io/favicon.ico',
-  'LinkedIn Sales Navigator': 'https://static.licdn.com/aero-v1/sc/h/al73832cl2r1826ok2ag9xvsb',
-  'ZeroBounce': 'https://www.zerobounce.net/favicon-32x32.png',
-  'MillionVerifier': 'https://i.imgur.com/JBA8J4v.png',
-  'Instantly': 'https://i.imgur.com/c4r9tO8.png',
-  'Smartlead': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfIxt2s6cnD5T9GgY9wB5i_L7n3-TtjB7B2w&s',
+  'LinkedIn Sales Navigator': 'https://www.linkedin.com/favicon.ico',
+  'ZeroBounce': 'https://www.zerobounce.net/favicon.ico',
+  'MillionVerifier': 'https://millionverifier.com/favicon.ico',
+  'Instantly': 'https://instantly.ai/favicon.ico',
+  'Smartlead': 'https://smartlead.ai/favicon.ico',
   'Phantombuster': 'https://phantombuster.com/favicon.ico',
-  'MXToolbox': 'https://logo.clearbit.com/mxtoolbox.com?size=256',
-  'EasyDMARC': 'https://logo.clearbit.com/easydmarc.com?size=256',
-  'GlockApps': 'https://logo.clearbit.com/glockapps.com?size=256',
-  'ChatGPT (OpenAI)': 'https://cdn.simpleicons.org/openai',
-  'Claude (Anthropic)': 'https://logo.clearbit.com/anthropic.com?size=256',
-  'DeepSeek': 'https://logo.clearbit.com/deepseek.com?size=256',
-  'n8n': 'https://logo.clearbit.com/n8n.io?size=256',
-  'Airtable': 'https://cdn.simpleicons.org/airtable',
-  'Google Sheets': 'https://cdn.simpleicons.org/googlesheets',
-  'Notion': 'https://cdn.simpleicons.org/notion',
-}
+  'MXToolbox': 'https://mxtoolbox.com/favicon.ico',
+  'EasyDMARC': 'https://easydmarc.com/favicon.ico',
+  'GlockApps': 'https://glockapps.com/favicon.ico',
+  'ChatGPT (OpenAI)': 'https://chatgpt.com/favicon.ico',
+  'Claude (Anthropic)': 'https://www.anthropic.com/favicon.ico',
+  'DeepSeek': 'https://www.deepseek.com/favicon.ico',
+  'n8n': 'https://n8n.io/favicon.ico',
+  'Airtable': 'https://www.airtable.com/favicon.ico',
+  'Google Sheets': 'https://www.google.com/s2/favicons?sz=64&domain=sheets.google.com',
+  'Notion': 'https://www.notion.so/favicon.ico',
+};
 
 const services = [
   {
