@@ -20,13 +20,23 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 
 const tools = {
-  'Apollo.io': 'https://favicon.is/apollo.io',
-  'LinkedIn Sales Navigator': 'https://favicon.is/linkedin.com',
-  'ZeroBounce': 'https://favicon.is/zerobounce.net',
-  'MillionVerifier': 'https://favicon.is/millionverifier.com',
-  'Instantly': 'https://favicon.is/instantly.ai',
-  'Smartlead': 'https://favicon.is/smartlead.ai',
-  'Phantombuster': 'https://favicon.is/phantombuster.com',
+  'Apollo.io': 'https://www.apollo.io/favicon.ico',
+  'LinkedIn Sales Navigator': 'https://static.licdn.com/aero-v1/sc/h/al73832cl2r1826ok2ag9xvsb',
+  'ZeroBounce': 'https://www.zerobounce.net/favicon-32x32.png',
+  'MillionVerifier': 'https://i.imgur.com/JBA8J4v.png',
+  'Instantly': 'https://i.imgur.com/c4r9tO8.png',
+  'Smartlead': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfIxt2s6cnD5T9GgY9wB5i_L7n3-TtjB7B2w&s',
+  'Phantombuster': 'https://phantombuster.com/favicon.ico',
+  'MXToolbox': 'https://logo.clearbit.com/mxtoolbox.com?size=256',
+  'EasyDMARC': 'https://logo.clearbit.com/easydmarc.com?size=256',
+  'GlockApps': 'https://logo.clearbit.com/glockapps.com?size=256',
+  'ChatGPT (OpenAI)': 'https://cdn.simpleicons.org/openai',
+  'Claude (Anthropic)': 'https://logo.clearbit.com/anthropic.com?size=256',
+  'DeepSeek': 'https://logo.clearbit.com/deepseek.com?size=256',
+  'n8n': 'https://logo.clearbit.com/n8n.io?size=256',
+  'Airtable': 'https://cdn.simpleicons.org/airtable',
+  'Google Sheets': 'https://cdn.simpleicons.org/googlesheets',
+  'Notion': 'https://cdn.simpleicons.org/notion',
 }
 
 const services = [
@@ -67,7 +77,7 @@ const services = [
       'Automated email warm-up and health monitoring',
       'Blacklist monitoring and rapid remediation',
     ],
-    toolLogos: []
+    toolLogos: ['MXToolbox', 'EasyDMARC', 'GlockApps']
   },
   {
     icon: FileText,
@@ -80,7 +90,7 @@ const services = [
       'AI-powered copy optimization based on performance data',
       'Value propositions tailored to specific market segments',
     ],
-    toolLogos: []
+    toolLogos: ['ChatGPT (OpenAI)', 'Claude (Anthropic)', 'DeepSeek']
   },
   {
     icon: BrainCircuit,
@@ -93,7 +103,7 @@ const services = [
       'Automatic calendar scheduling across time zones',
       'Custom AI agent trained on your services and expertise',
     ],
-    toolLogos: []
+    toolLogos: ['n8n', 'Instantly', 'Smartlead']
   },
   {
     icon: Shapes,
@@ -107,7 +117,7 @@ const services = [
       'Dedicated project management and support',
       'Flexible engagement and pricing models',
     ],
-    toolLogos: []
+    toolLogos: ['Airtable', 'Google Sheets', 'Notion']
   },
 ];
 

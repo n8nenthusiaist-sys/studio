@@ -99,6 +99,18 @@ const nextConfig: NextConfig = {
         hostname: 'i.imgur.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'logo.clearbit.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.simpleicons.org',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
