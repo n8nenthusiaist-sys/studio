@@ -3,7 +3,12 @@ import { Logo } from './logo';
 import React from 'react';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = React.useState(new Date().getFullYear());
+
+  React.useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
 
   return (
     <footer className="w-full border-t border-border/40 bg-card">

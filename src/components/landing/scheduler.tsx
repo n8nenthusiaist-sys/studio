@@ -10,13 +10,8 @@ const timeSlots = [
 ];
 
 export function Scheduler() {
-  const [date, setDate] = React.useState<Date | undefined>(undefined);
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
   const [selectedTime, setSelectedTime] = React.useState<string | null>(null);
-
-  React.useEffect(() => {
-    // This will only run on the client, after the initial render
-    setDate(new Date());
-  }, []);
 
   return (
     <div className="flex flex-col items-center space-y-4">
