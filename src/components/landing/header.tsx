@@ -20,7 +20,7 @@ export function Header() {
         </div>
         <div id="loom-video" className="relative mt-12 w-full max-w-4xl aspect-video">
           <iframe
-            src="https://www.youtube.com/embed/GAKc0f0wTkg"
+            src="https://www.loom.com/embed/6ec4c92ec0224256ba814b2528fff751"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="rounded-lg border shadow-2xl absolute top-0 left-0 w-full h-full"
