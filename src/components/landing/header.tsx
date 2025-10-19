@@ -11,10 +11,10 @@ export function Header() {
       <div className="container z-10 mx-auto flex flex-col items-center justify-center text-center">
         <div className="flex flex-col items-center gap-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Fill Your Calendar with Qualified B2B Leads Through AI-Enhanced Outbound Automation — Gain the Competitive Edge That Manual Prospecting Can’t Deliver
+            Fill Your Calendar with Qualified B2B Leads Through AI-Enhanced Outbound Automation
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Without Having To Rely On Unpredictable Referrals or Inconsistent Inbound Leads
+            Fill Your Calendar with Qualified B2B Leads Through AI-Enhanced Outbound Automation — Gain the Competitive Edge That Manual Prospecting Can’t Deliver
           </p>
           <ClientHeader />
         </div>
