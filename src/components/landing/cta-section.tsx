@@ -43,7 +43,7 @@ export function CtaSection() {
               <h3 className="mb-4 text-center font-headline text-xl font-semibold text-card-foreground">Schedule Your Free Discovery Call</h3>
               <p className="text-muted-foreground mb-6">Find a time that works for you and let's discuss how we can help your business grow.</p>
               <Button size="sm" asChild>
-                <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/n8nenthusiaist/dominik-jakubowsk" target="_blank" rel="noopener noreferrer">
                   Book a Free Discovery Call
                 </a>
               </Button>

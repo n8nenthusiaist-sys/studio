@@ -168,7 +168,7 @@ export function Services() {
                         </div>
                       )}
                       <Button size="sm" asChild className="w-full md:w-auto">
-                        <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+                        <a href="https://calendly.com/n8nenthusiaist/dominik-jakubowsk" target="_blank" rel="noopener noreferrer">
                           <Calendar className="mr-2 h-4 w-4" />
                           Implement Now
                         </a>

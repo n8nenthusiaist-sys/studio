@@ -152,7 +152,7 @@ export function CaseStudies() {
                 </div>
                 <CardContent className="pt-6">
                   <Button size="sm" asChild className="w-full">
-                    <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">Learn More</a>
+                    <a href="https://calendly.com/n8nenthusiaist/dominik-jakubowsk" target="_blank" rel="noopener noreferrer">Learn More</a>
                   </Button>
                 </CardContent>
                </div>

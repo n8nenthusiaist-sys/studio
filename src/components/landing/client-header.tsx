@@ -14,7 +14,7 @@ export function ClientHeader() {
   return (
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Button size="sm" asChild>
-          <a href="https://calendly.com/n8nenthusiaist/30min" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/n8nenthusiaist/dominik-jakubowsk" target="_blank" rel="noopener noreferrer">
             Book a Free Discovery Call
           </a>
         </Button>
