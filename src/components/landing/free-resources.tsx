@@ -17,7 +17,7 @@ const resources = [
     category: 'TUTORIAL',
     title: 'Build a content generation system for Linkedin and instagram in under 10 minutes',
     description: 'Watch a step-by-step tutorial on how to set up the technical infrastructure for a successful cold outreach campaign.',
-    imageId: 'resource-guide-1',
+    imageId: 'resource-guide-2',
     link: 'https://www.loom.com/share/849c8b72d5ab46e1a50f492c633687b6',
   },
   {
