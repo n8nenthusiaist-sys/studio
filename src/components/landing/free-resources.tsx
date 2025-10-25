@@ -14,11 +14,11 @@ const resources = [
     link: 'https://www.loom.com/share/3aee1324234b4379941ae000d7783ac5?sid=11b09372-0124-406f-bcc6-787004accfc5'
   },
   {
-    category: 'GUIDE',
-    title: 'The Ultimate Guide to Cold Email Outreach',
-    description: 'Learn how to write effective cold emails that get responses and book meetings. (Still in the making)',
+    category: 'TUTORIAL',
+    title: 'Build a Cold Outreach System in Under 10 Minutes',
+    description: 'Watch a step-by-step tutorial on how to set up the technical infrastructure for a successful cold outreach campaign.',
     imageId: 'resource-guide-1',
-    link: '#',
+    link: 'https://www.loom.com/share/849c8b72d5ab46e1a50f492c633687b6',
   },
   {
     category: 'TEMPLATES',
